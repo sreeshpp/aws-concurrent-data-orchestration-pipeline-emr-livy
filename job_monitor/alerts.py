@@ -20,6 +20,7 @@ from job_monitor.config import (
     SMTP_USER,
 )
 from job_monitor.linkedin_client import JobPosting
+from job_monitor.local_alerts import send_local_alerts
 
 logger = logging.getLogger(__name__)
 
@@ -124,11 +125,12 @@ def send_alerts(jobs: List[JobPosting]) -> None:
 
     logger.info("New jobs found:\n%s", _format_email_body(jobs))
 
+    local_sent = send_local_alerts(jobs)
     slack_sent = send_slack_alert(jobs)
     email_sent = send_email_alert(jobs)
 
-    if not slack_sent and not email_sent:
+    if not local_sent and not slack_sent and not email_sent:
         logger.warning(
-            "No alert channels configured. Set SLACK_WEBHOOK_URL or SMTP_* / "
-            "ALERT_EMAIL_TO environment variables to receive notifications."
+            "No alert channels delivered. Desktop notifications require notify-send "
+            "(Linux) or macOS. Optional: SLACK_WEBHOOK_URL or SMTP_* / ALERT_EMAIL_TO."
         )

@@ -4,6 +4,10 @@ import os
 from dataclasses import dataclass, field
 from typing import List
 
+from job_monitor.paths import STATE_FILE as LOCAL_STATE_FILE, load_local_config
+
+load_local_config()
+
 
 @dataclass
 class SearchProfile:
@@ -61,10 +65,7 @@ USER_AGENT = (
 PAGE_SIZE = 25
 MAX_PAGES = 4
 
-STATE_FILE = os.environ.get(
-    "JOB_MONITOR_STATE_FILE",
-    os.path.join(os.path.dirname(__file__), "..", "data", "seen_jobs.json"),
-)
+STATE_FILE = os.environ.get("JOB_MONITOR_STATE_FILE", str(LOCAL_STATE_FILE))
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL", "")
 ALERT_EMAIL_TO = os.environ.get("ALERT_EMAIL_TO", "")
 SMTP_HOST = os.environ.get("SMTP_HOST", "")
