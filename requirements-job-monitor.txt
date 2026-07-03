@@ -1,0 +1,2 @@
+# Dependencies for the LinkedIn job monitor (stdlib-only; no pip packages required).
+# Airflow is expected to be installed separately on the scheduler host.

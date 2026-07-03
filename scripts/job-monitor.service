@@ -1,0 +1,16 @@
+[Unit]
+Description=LinkedIn Senior Data Engineer Job Monitor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/job-monitor
+Environment=PYTHONPATH=/opt/job-monitor
+# Uncomment and set alert variables in an EnvironmentFile:
+# EnvironmentFile=/etc/job-monitor/env
+ExecStart=/usr/bin/python3 -m job_monitor.monitor
+User=jobmonitor
+
+[Install]
+WantedBy=multi-user.target
