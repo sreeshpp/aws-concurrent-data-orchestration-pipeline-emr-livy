@@ -6,6 +6,8 @@ from dataclasses import dataclass, field
 
 from resume_agent.config import AgentConfig
 
+AGENT_BUILD_ID = "2026-09-01-anthropic-no-temperature"
+
 SYSTEM_PROMPT = """You are an expert career coach and technical recruiter assistant.
 You analyze resumes with precision and empathy.
 
@@ -63,37 +65,42 @@ class ResumeAnalysisAgent:
             raise ValueError("Upload a resume before chatting.")
 
         self.config.validate()
+        config = AgentConfig.from_env()
         messages = self._build_messages(user_message)
 
-        if self.config.provider == "bedrock":
-            reply = self._chat_bedrock(messages)
+        if config.provider == "bedrock":
+            reply = self._chat_bedrock(messages, config)
         else:
-            reply = self._chat_anthropic(messages)
+            reply = self._chat_anthropic(messages, config)
 
         self.history.append(ChatMessage(role="user", content=user_message))
         self.history.append(ChatMessage(role="assistant", content=reply))
         return reply
 
-    def _chat_anthropic(self, messages: list[dict[str, str]]) -> str:
+    def _chat_anthropic(
+        self, messages: list[dict[str, str]], config: AgentConfig
+    ) -> str:
         from anthropic import Anthropic
 
         system_parts = [m["content"] for m in messages if m["role"] == "system"]
         conversation = [m for m in messages if m["role"] != "system"]
 
-        client_kwargs: dict[str, str] = {"api_key": self.config.api_key}
-        if self.config.base_url:
-            client_kwargs["base_url"] = self.config.base_url
+        client_kwargs: dict[str, str] = {"api_key": config.api_key}
+        if config.base_url:
+            client_kwargs["base_url"] = config.base_url
 
         client = Anthropic(**client_kwargs)
         response = client.messages.create(
-            model=self.config.model,
-            max_tokens=self.config.max_tokens,
+            model=config.model,
+            max_tokens=config.max_tokens,
             system="\n\n".join(system_parts),
             messages=conversation,
         )
         return response.content[0].text
 
-    def _chat_bedrock(self, messages: list[dict[str, str]]) -> str:
+    def _chat_bedrock(
+        self, messages: list[dict[str, str]], config: AgentConfig
+    ) -> str:
         import json
 
         import boto3
@@ -103,13 +110,13 @@ class ResumeAnalysisAgent:
 
         payload = {
             "anthropic_version": "bedrock-2023-05-31",
-            "max_tokens": self.config.max_tokens,
-            "temperature": self.config.temperature,
+            "max_tokens": config.max_tokens,
+            "temperature": config.temperature,
             "system": "\n\n".join(system_parts),
             "messages": conversation,
         }
 
-        client = boto3.client("bedrock-runtime", region_name=self.config.aws_region)
+        client = boto3.client("bedrock-runtime", region_name=config.aws_region)
         response = client.invoke_model(
             modelId=self.config.model,
             body=json.dumps(payload),

@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import importlib
+
 import streamlit as st
 
-from resume_agent.agent import ResumeAnalysisAgent
+from resume_agent.agent import AGENT_BUILD_ID
 from resume_agent.config import AgentConfig
 from resume_agent.parser import SUPPORTED_EXTENSIONS, parse_resume
 from resume_agent.paths import SAMPLE_RESUME
@@ -29,6 +31,16 @@ PROVIDER_LABELS = {
 }
 
 
+def _create_agent(resume_text: str):
+    """Load the latest agent code (Streamlit caches Python modules)."""
+    import resume_agent.agent as agent_module
+    import resume_agent.config as config_module
+
+    importlib.reload(config_module)
+    importlib.reload(agent_module)
+    return agent_module.ResumeAnalysisAgent(resume_text=resume_text)
+
+
 def _init_session() -> None:
     if "agent" not in st.session_state:
         st.session_state.agent = None
@@ -38,11 +50,22 @@ def _init_session() -> None:
         st.session_state.messages = []
     if "loaded_file_id" not in st.session_state:
         st.session_state.loaded_file_id = None
+    if "agent_build_id" not in st.session_state:
+        st.session_state.agent_build_id = None
+
+    if (
+        st.session_state.agent is not None
+        and st.session_state.agent_build_id != AGENT_BUILD_ID
+    ):
+        resume_text = st.session_state.agent.resume_text
+        st.session_state.agent = _create_agent(resume_text)
+        st.session_state.agent_build_id = AGENT_BUILD_ID
 
 
 def _load_resume(uploaded_file) -> None:
     resume_text = parse_resume(uploaded_file.getvalue(), uploaded_file.name)
-    st.session_state.agent = ResumeAnalysisAgent(resume_text=resume_text)
+    st.session_state.agent = _create_agent(resume_text)
+    st.session_state.agent_build_id = AGENT_BUILD_ID
     st.session_state.resume_name = uploaded_file.name
     st.session_state.loaded_file_id = f"{uploaded_file.name}:{uploaded_file.size}"
     st.session_state.messages = [
@@ -61,7 +84,8 @@ def _load_sample_resume() -> None:
         st.error("Sample resume not found in data/sample_resume.pdf")
         return
     resume_text = parse_resume(SAMPLE_RESUME.read_bytes(), SAMPLE_RESUME.name)
-    st.session_state.agent = ResumeAnalysisAgent(resume_text=resume_text)
+    st.session_state.agent = _create_agent(resume_text)
+    st.session_state.agent_build_id = AGENT_BUILD_ID
     st.session_state.resume_name = SAMPLE_RESUME.name
     st.session_state.loaded_file_id = f"{SAMPLE_RESUME.name}:{SAMPLE_RESUME.stat().st_size}"
     st.session_state.messages = [
@@ -85,7 +109,8 @@ def _reload_agent() -> bool:
         return False
 
     resume_text = st.session_state.agent.resume_text
-    st.session_state.agent = ResumeAnalysisAgent(resume_text=resume_text)
+    st.session_state.agent = _create_agent(resume_text)
+    st.session_state.agent_build_id = AGENT_BUILD_ID
     st.session_state.messages = [
         {
             "role": "assistant",
@@ -130,13 +155,14 @@ def _render_sidebar() -> None:
                 st.warning(
                     "Set `ANTHROPIC_API_KEY` in `~/.config/resume-agent/config.env`."
                 )
+            st.caption(f"Agent build: `{AGENT_BUILD_ID}`")
         except Exception as exc:
             st.warning(str(exc))
 
         if st.button(
             "Reload agent",
             use_container_width=True,
-            help="Recreate the agent after code or config changes without restarting Streamlit",
+            help="Reload the latest agent code and configuration",
         ):
             if _reload_agent():
                 st.success("Agent reloaded.")
@@ -183,7 +209,7 @@ def _render_chat() -> None:
 
 
 def _handle_user_message(user_input: str) -> None:
-    agent: ResumeAnalysisAgent = st.session_state.agent
+    agent = st.session_state.agent
     st.session_state.messages.append({"role": "user", "content": user_input})
 
     with st.chat_message("assistant"):
@@ -191,7 +217,10 @@ def _handle_user_message(user_input: str) -> None:
             try:
                 reply = agent.chat(user_input)
             except Exception as exc:
-                reply = f"Sorry, I could not complete that request: {exc}"
+                reply = (
+                    f"Sorry, I could not complete that request: {exc} "
+                    f"(agent build: {AGENT_BUILD_ID})"
+                )
         st.markdown(reply)
 
     st.session_state.messages.append({"role": "assistant", "content": reply})
