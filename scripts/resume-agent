@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT"
+
+if [[ -f "$HOME/.config/resume-agent/config.env" ]]; then
+  set -a
+  # shellcheck disable=SC1090
+  source "$HOME/.config/resume-agent/config.env"
+  set +a
+fi
+
+exec python3 -m streamlit run resume_chatbot.py --server.headless true "$@"

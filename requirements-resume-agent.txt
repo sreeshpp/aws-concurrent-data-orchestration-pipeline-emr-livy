@@ -1,0 +1,5 @@
+# Resume analysis chatbot agent
+streamlit>=1.32.0
+anthropic>=0.40.0
+pypdf>=4.0.0
+boto3>=1.34.0
