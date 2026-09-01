@@ -68,23 +68,31 @@ class ResumeAnalysisAgent:
         if self.config.provider == "bedrock":
             reply = self._chat_bedrock(messages)
         else:
-            reply = self._chat_openai(messages)
+            reply = self._chat_anthropic(messages)
 
         self.history.append(ChatMessage(role="user", content=user_message))
         self.history.append(ChatMessage(role="assistant", content=reply))
         return reply
 
-    def _chat_openai(self, messages: list[dict[str, str]]) -> str:
-        from openai import OpenAI
+    def _chat_anthropic(self, messages: list[dict[str, str]]) -> str:
+        from anthropic import Anthropic
 
-        client = OpenAI(api_key=self.config.api_key, base_url=self.config.base_url)
-        response = client.chat.completions.create(
+        system_parts = [m["content"] for m in messages if m["role"] == "system"]
+        conversation = [m for m in messages if m["role"] != "system"]
+
+        client_kwargs: dict[str, str] = {"api_key": self.config.api_key}
+        if self.config.base_url:
+            client_kwargs["base_url"] = self.config.base_url
+
+        client = Anthropic(**client_kwargs)
+        response = client.messages.create(
             model=self.config.model,
-            messages=messages,
-            temperature=self.config.temperature,
             max_tokens=self.config.max_tokens,
+            temperature=self.config.temperature,
+            system="\n\n".join(system_parts),
+            messages=conversation,
         )
-        return response.choices[0].message.content or ""
+        return response.content[0].text
 
     def _chat_bedrock(self, messages: list[dict[str, str]]) -> str:
         import json

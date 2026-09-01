@@ -79,7 +79,7 @@ pip install -r requirements-resume-agent.txt
 # Optional: configure API key
 mkdir -p ~/.config/resume-agent
 cp config-resume-agent.env.example ~/.config/resume-agent/config.env
-# Edit config.env and set OPENAI_API_KEY
+# Edit config.env and set ANTHROPIC_API_KEY
 
 # Launch the chatbot
 ./scripts/resume-agent
@@ -91,7 +91,7 @@ Open the URL shown in the terminal (default `http://localhost:8501`).
 
 | Provider | Config |
 |----------|--------|
-| **OpenAI** (default) | `OPENAI_API_KEY`, optional `OPENAI_BASE_URL` for compatible APIs |
+| **Anthropic** (default) | `ANTHROPIC_API_KEY`, optional `ANTHROPIC_BASE_URL` |
 | **AWS Bedrock** | `RESUME_AGENT_PROVIDER=bedrock`, `RESUME_AGENT_MODEL`, `AWS_REGION` |
 
 ### Example questions

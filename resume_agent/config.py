@@ -38,27 +38,33 @@ class AgentConfig:
     @classmethod
     def from_env(cls) -> "AgentConfig":
         load_local_config()
-        provider = os.environ.get("RESUME_AGENT_PROVIDER", "openai").strip().lower()
+        provider = os.environ.get("RESUME_AGENT_PROVIDER", "anthropic").strip().lower()
+        default_models = {
+            "anthropic": "claude-sonnet-4-20250514",
+            "bedrock": "anthropic.claude-3-5-sonnet-20241022-v2:0",
+        }
         return cls(
             provider=provider,
             model=os.environ.get(
                 "RESUME_AGENT_MODEL",
-                "gpt-4o-mini" if provider == "openai" else "anthropic.claude-3-5-sonnet-20241022-v2:0",
+                default_models.get(provider, "claude-sonnet-4-20250514"),
             ),
-            api_key=os.environ.get("OPENAI_API_KEY", os.environ.get("RESUME_AGENT_API_KEY", "")),
-            base_url=os.environ.get("OPENAI_BASE_URL") or None,
+            api_key=os.environ.get(
+                "ANTHROPIC_API_KEY", os.environ.get("RESUME_AGENT_API_KEY", "")
+            ),
+            base_url=os.environ.get("ANTHROPIC_BASE_URL") or None,
             aws_region=os.environ.get("AWS_REGION", "us-east-1"),
             temperature=float(os.environ.get("RESUME_AGENT_TEMPERATURE", "0.4")),
             max_tokens=int(os.environ.get("RESUME_AGENT_MAX_TOKENS", "2048")),
         )
 
     def validate(self) -> None:
-        if self.provider == "openai" and not self.api_key:
+        if self.provider == "anthropic" and not self.api_key:
             raise ValueError(
-                "OPENAI_API_KEY is required for the OpenAI provider. "
+                "ANTHROPIC_API_KEY is required for the Anthropic provider. "
                 "Set it in your environment or ~/.config/resume-agent/config.env"
             )
         if self.provider == "bedrock":
             return
-        if self.provider not in {"openai", "bedrock"}:
+        if self.provider not in {"anthropic", "bedrock"}:
             raise ValueError(f"Unsupported provider: {self.provider}")
