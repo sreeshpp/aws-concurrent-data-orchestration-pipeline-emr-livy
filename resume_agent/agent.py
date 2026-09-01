@@ -88,7 +88,6 @@ class ResumeAnalysisAgent:
         response = client.messages.create(
             model=self.config.model,
             max_tokens=self.config.max_tokens,
-            temperature=self.config.temperature,
             system="\n\n".join(system_parts),
             messages=conversation,
         )
