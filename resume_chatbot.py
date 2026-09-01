@@ -23,6 +23,11 @@ QUICK_PROMPTS = [
     "Generate 5 likely interview questions based on this resume.",
 ]
 
+PROVIDER_LABELS = {
+    "anthropic": "Using Anthropic API",
+    "bedrock": "Using AWS Bedrock",
+}
+
 
 def _init_session() -> None:
     if "agent" not in st.session_state:
@@ -70,6 +75,29 @@ def _load_sample_resume() -> None:
     ]
 
 
+def _provider_label(provider: str) -> str:
+    return PROVIDER_LABELS.get(provider, f"Using {provider}")
+
+
+def _reload_agent() -> bool:
+    """Recreate the agent so code and config changes take effect."""
+    if st.session_state.agent is None:
+        return False
+
+    resume_text = st.session_state.agent.resume_text
+    st.session_state.agent = ResumeAnalysisAgent(resume_text=resume_text)
+    st.session_state.messages = [
+        {
+            "role": "assistant",
+            "content": (
+                "Agent reloaded with the latest configuration. "
+                "Chat history was cleared."
+            ),
+        }
+    ]
+    return True
+
+
 def _render_sidebar() -> None:
     with st.sidebar:
         st.header("Resume")
@@ -96,10 +124,25 @@ def _render_sidebar() -> None:
         st.header("Model")
         try:
             config = AgentConfig.from_env()
-            st.caption(f"Provider: `{config.provider}`")
+            st.info(_provider_label(config.provider))
             st.caption(f"Model: `{config.model}`")
+            if config.provider == "anthropic" and not config.api_key:
+                st.warning(
+                    "Set `ANTHROPIC_API_KEY` in `~/.config/resume-agent/config.env`."
+                )
         except Exception as exc:
             st.warning(str(exc))
+
+        if st.button(
+            "Reload agent",
+            use_container_width=True,
+            help="Recreate the agent after code or config changes without restarting Streamlit",
+        ):
+            if _reload_agent():
+                st.success("Agent reloaded.")
+            else:
+                st.info("Load a resume first, then reload the agent.")
+            st.rerun()
 
         st.divider()
         if st.session_state.agent and st.button("Clear chat", use_container_width=True):
@@ -115,7 +158,13 @@ def _render_sidebar() -> None:
 
 def _render_chat() -> None:
     st.title("Resume Analysis Agent")
-    st.caption("Upload a resume and chat with an LLM career coach.")
+    try:
+        provider = AgentConfig.from_env().provider
+        provider_note = _provider_label(provider)
+    except Exception:
+        provider_note = "Upload a resume and chat with an LLM career coach."
+
+    st.caption(f"{provider_note}. Upload a resume to get started.")
 
     if st.session_state.agent is None:
         st.info("Upload a resume in the sidebar or load the sample resume to begin.")
