@@ -9,7 +9,7 @@ from fastapi import FastAPI, HTTPException, Query
 
 from .catalog import DEFAULT_CATALOG_PATH, load_catalog
 from .geo import closest, parse_limit, resolve_city
-from .models import Catalog, InfrastructureNode, NodeType
+from .models import Catalog, NodeType
 
 app = FastAPI(
     title="AWS Region & Edge Advisor Catalog",
