@@ -1,0 +1,710 @@
+[
+  {
+    "code": "us-east-1",
+    "name": "US East (N. Virginia)",
+    "geography": "United States of America",
+    "country_codes": [
+      "US"
+    ],
+    "opt_in_required": false,
+    "city": "Ashburn",
+    "lat": 39.0438,
+    "lon": -77.4874,
+    "az_count": 6,
+    "compliance_tags": [
+      "hipaa",
+      "pci",
+      "soc",
+      "iso",
+      "fedramp"
+    ],
+    "privacy_buckets": [
+      "us-only"
+    ]
+  },
+  {
+    "code": "us-east-2",
+    "name": "US East (Ohio)",
+    "geography": "United States of America",
+    "country_codes": [
+      "US"
+    ],
+    "opt_in_required": false,
+    "city": "Columbus",
+    "lat": 39.9612,
+    "lon": -82.9988,
+    "az_count": 3,
+    "compliance_tags": [
+      "hipaa",
+      "pci",
+      "soc",
+      "iso",
+      "fedramp"
+    ],
+    "privacy_buckets": [
+      "us-only"
+    ]
+  },
+  {
+    "code": "us-west-1",
+    "name": "US West (N. California)",
+    "geography": "United States of America",
+    "country_codes": [
+      "US"
+    ],
+    "opt_in_required": false,
+    "city": "San Francisco",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "az_count": 3,
+    "compliance_tags": [
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "us-only"
+    ]
+  },
+  {
+    "code": "us-west-2",
+    "name": "US West (Oregon)",
+    "geography": "United States of America",
+    "country_codes": [
+      "US"
+    ],
+    "opt_in_required": false,
+    "city": "Boardman",
+    "lat": 45.8399,
+    "lon": -119.7006,
+    "az_count": 4,
+    "compliance_tags": [
+      "hipaa",
+      "pci",
+      "soc",
+      "iso",
+      "fedramp"
+    ],
+    "privacy_buckets": [
+      "us-only"
+    ]
+  },
+  {
+    "code": "ca-central-1",
+    "name": "Canada (Central)",
+    "geography": "Canada",
+    "country_codes": [
+      "CA"
+    ],
+    "opt_in_required": false,
+    "city": "Montreal",
+    "lat": 45.5017,
+    "lon": -73.5673,
+    "az_count": 3,
+    "compliance_tags": [
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "canada"
+    ]
+  },
+  {
+    "code": "ca-west-1",
+    "name": "Canada West (Calgary)",
+    "geography": "Canada",
+    "country_codes": [
+      "CA"
+    ],
+    "opt_in_required": true,
+    "city": "Calgary",
+    "lat": 51.0447,
+    "lon": -114.0719,
+    "az_count": 3,
+    "compliance_tags": [
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "canada"
+    ]
+  },
+  {
+    "code": "mx-central-1",
+    "name": "Mexico (Central)",
+    "geography": "Mexico",
+    "country_codes": [
+      "MX"
+    ],
+    "opt_in_required": true,
+    "city": "Quer\u00e9taro",
+    "lat": 20.5888,
+    "lon": -100.3899,
+    "az_count": 3,
+    "compliance_tags": [
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "mexico"
+    ]
+  },
+  {
+    "code": "sa-east-1",
+    "name": "South America (S\u00e3o Paulo)",
+    "geography": "Brazil",
+    "country_codes": [
+      "BR"
+    ],
+    "opt_in_required": false,
+    "city": "S\u00e3o Paulo",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "az_count": 3,
+    "compliance_tags": [
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "brazil"
+    ]
+  },
+  {
+    "code": "eu-west-1",
+    "name": "Europe (Ireland)",
+    "geography": "Ireland",
+    "country_codes": [
+      "IE"
+    ],
+    "opt_in_required": false,
+    "city": "Dublin",
+    "lat": 53.3498,
+    "lon": -6.2603,
+    "az_count": 3,
+    "compliance_tags": [
+      "gdpr",
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "eu-data-residency",
+      "gdpr"
+    ]
+  },
+  {
+    "code": "eu-west-2",
+    "name": "Europe (London)",
+    "geography": "United Kingdom",
+    "country_codes": [
+      "GB"
+    ],
+    "opt_in_required": false,
+    "city": "London",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "az_count": 3,
+    "compliance_tags": [
+      "gdpr",
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "uk",
+      "gdpr"
+    ]
+  },
+  {
+    "code": "eu-west-3",
+    "name": "Europe (Paris)",
+    "geography": "France",
+    "country_codes": [
+      "FR"
+    ],
+    "opt_in_required": false,
+    "city": "Paris",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "az_count": 3,
+    "compliance_tags": [
+      "gdpr",
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "eu-data-residency",
+      "gdpr"
+    ]
+  },
+  {
+    "code": "eu-central-1",
+    "name": "Europe (Frankfurt)",
+    "geography": "Germany",
+    "country_codes": [
+      "DE"
+    ],
+    "opt_in_required": false,
+    "city": "Frankfurt",
+    "lat": 50.1109,
+    "lon": 8.6821,
+    "az_count": 3,
+    "compliance_tags": [
+      "gdpr",
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "eu-data-residency",
+      "gdpr"
+    ]
+  },
+  {
+    "code": "eu-central-2",
+    "name": "Europe (Zurich)",
+    "geography": "Switzerland",
+    "country_codes": [
+      "CH"
+    ],
+    "opt_in_required": true,
+    "city": "Zurich",
+    "lat": 47.3769,
+    "lon": 8.5417,
+    "az_count": 3,
+    "compliance_tags": [
+      "gdpr",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "switzerland",
+      "gdpr"
+    ]
+  },
+  {
+    "code": "eu-north-1",
+    "name": "Europe (Stockholm)",
+    "geography": "Sweden",
+    "country_codes": [
+      "SE"
+    ],
+    "opt_in_required": false,
+    "city": "Stockholm",
+    "lat": 59.3293,
+    "lon": 18.0686,
+    "az_count": 3,
+    "compliance_tags": [
+      "gdpr",
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "eu-data-residency",
+      "gdpr"
+    ]
+  },
+  {
+    "code": "eu-south-1",
+    "name": "Europe (Milan)",
+    "geography": "Italy",
+    "country_codes": [
+      "IT"
+    ],
+    "opt_in_required": true,
+    "city": "Milan",
+    "lat": 45.4642,
+    "lon": 9.19,
+    "az_count": 3,
+    "compliance_tags": [
+      "gdpr",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "eu-data-residency",
+      "gdpr"
+    ]
+  },
+  {
+    "code": "eu-south-2",
+    "name": "Europe (Spain)",
+    "geography": "Spain",
+    "country_codes": [
+      "ES"
+    ],
+    "opt_in_required": true,
+    "city": "Arag\u00f3n",
+    "lat": 41.5976,
+    "lon": -0.9057,
+    "az_count": 3,
+    "compliance_tags": [
+      "gdpr",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "eu-data-residency",
+      "gdpr"
+    ]
+  },
+  {
+    "code": "af-south-1",
+    "name": "Africa (Cape Town)",
+    "geography": "South Africa",
+    "country_codes": [
+      "ZA"
+    ],
+    "opt_in_required": true,
+    "city": "Cape Town",
+    "lat": -33.9249,
+    "lon": 18.4241,
+    "az_count": 3,
+    "compliance_tags": [
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "africa"
+    ]
+  },
+  {
+    "code": "me-south-1",
+    "name": "Middle East (Bahrain)",
+    "geography": "Bahrain",
+    "country_codes": [
+      "BH"
+    ],
+    "opt_in_required": true,
+    "city": "Manama",
+    "lat": 26.2235,
+    "lon": 50.5876,
+    "az_count": 3,
+    "compliance_tags": [
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "middle-east"
+    ]
+  },
+  {
+    "code": "me-central-1",
+    "name": "Middle East (UAE)",
+    "geography": "United Arab Emirates",
+    "country_codes": [
+      "AE"
+    ],
+    "opt_in_required": true,
+    "city": "Dubai",
+    "lat": 25.2048,
+    "lon": 55.2708,
+    "az_count": 3,
+    "compliance_tags": [
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "middle-east"
+    ]
+  },
+  {
+    "code": "il-central-1",
+    "name": "Israel (Tel Aviv)",
+    "geography": "Israel",
+    "country_codes": [
+      "IL"
+    ],
+    "opt_in_required": true,
+    "city": "Tel Aviv",
+    "lat": 32.0853,
+    "lon": 34.7818,
+    "az_count": 3,
+    "compliance_tags": [
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "israel"
+    ]
+  },
+  {
+    "code": "ap-south-1",
+    "name": "Asia Pacific (Mumbai)",
+    "geography": "India",
+    "country_codes": [
+      "IN"
+    ],
+    "opt_in_required": false,
+    "city": "Mumbai",
+    "lat": 19.076,
+    "lon": 72.8777,
+    "az_count": 3,
+    "compliance_tags": [
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "india"
+    ]
+  },
+  {
+    "code": "ap-south-2",
+    "name": "Asia Pacific (Hyderabad)",
+    "geography": "India",
+    "country_codes": [
+      "IN"
+    ],
+    "opt_in_required": true,
+    "city": "Hyderabad",
+    "lat": 17.385,
+    "lon": 78.4867,
+    "az_count": 3,
+    "compliance_tags": [
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "india"
+    ]
+  },
+  {
+    "code": "ap-southeast-1",
+    "name": "Asia Pacific (Singapore)",
+    "geography": "Singapore",
+    "country_codes": [
+      "SG"
+    ],
+    "opt_in_required": false,
+    "city": "Singapore",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "az_count": 3,
+    "compliance_tags": [
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "apac"
+    ]
+  },
+  {
+    "code": "ap-southeast-2",
+    "name": "Asia Pacific (Sydney)",
+    "geography": "Australia",
+    "country_codes": [
+      "AU"
+    ],
+    "opt_in_required": false,
+    "city": "Sydney",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "az_count": 3,
+    "compliance_tags": [
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "australia"
+    ]
+  },
+  {
+    "code": "ap-southeast-3",
+    "name": "Asia Pacific (Jakarta)",
+    "geography": "Indonesia",
+    "country_codes": [
+      "ID"
+    ],
+    "opt_in_required": true,
+    "city": "Jakarta",
+    "lat": -6.2088,
+    "lon": 106.8456,
+    "az_count": 3,
+    "compliance_tags": [
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "apac"
+    ]
+  },
+  {
+    "code": "ap-southeast-4",
+    "name": "Asia Pacific (Melbourne)",
+    "geography": "Australia",
+    "country_codes": [
+      "AU"
+    ],
+    "opt_in_required": true,
+    "city": "Melbourne",
+    "lat": -37.8136,
+    "lon": 144.9631,
+    "az_count": 3,
+    "compliance_tags": [
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "australia"
+    ]
+  },
+  {
+    "code": "ap-southeast-5",
+    "name": "Asia Pacific (Malaysia)",
+    "geography": "Malaysia",
+    "country_codes": [
+      "MY"
+    ],
+    "opt_in_required": true,
+    "city": "Kuala Lumpur",
+    "lat": 3.139,
+    "lon": 101.6869,
+    "az_count": 3,
+    "compliance_tags": [
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "apac"
+    ]
+  },
+  {
+    "code": "ap-southeast-7",
+    "name": "Asia Pacific (Thailand)",
+    "geography": "Thailand",
+    "country_codes": [
+      "TH"
+    ],
+    "opt_in_required": true,
+    "city": "Bangkok",
+    "lat": 13.7563,
+    "lon": 100.5018,
+    "az_count": 3,
+    "compliance_tags": [
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "apac"
+    ]
+  },
+  {
+    "code": "ap-northeast-1",
+    "name": "Asia Pacific (Tokyo)",
+    "geography": "Japan",
+    "country_codes": [
+      "JP"
+    ],
+    "opt_in_required": false,
+    "city": "Tokyo",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "az_count": 3,
+    "compliance_tags": [
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "japan"
+    ]
+  },
+  {
+    "code": "ap-northeast-2",
+    "name": "Asia Pacific (Seoul)",
+    "geography": "South Korea",
+    "country_codes": [
+      "KR"
+    ],
+    "opt_in_required": false,
+    "city": "Seoul",
+    "lat": 37.5665,
+    "lon": 126.978,
+    "az_count": 3,
+    "compliance_tags": [
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "korea"
+    ]
+  },
+  {
+    "code": "ap-northeast-3",
+    "name": "Asia Pacific (Osaka)",
+    "geography": "Japan",
+    "country_codes": [
+      "JP"
+    ],
+    "opt_in_required": false,
+    "city": "Osaka",
+    "lat": 34.6937,
+    "lon": 135.5023,
+    "az_count": 3,
+    "compliance_tags": [
+      "hipaa",
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "japan"
+    ]
+  },
+  {
+    "code": "ap-east-1",
+    "name": "Asia Pacific (Hong Kong)",
+    "geography": "Hong Kong",
+    "country_codes": [
+      "HK"
+    ],
+    "opt_in_required": true,
+    "city": "Hong Kong",
+    "lat": 22.3193,
+    "lon": 114.1694,
+    "az_count": 3,
+    "compliance_tags": [
+      "pci",
+      "soc",
+      "iso"
+    ],
+    "privacy_buckets": [
+      "apac"
+    ]
+  }
+]

@@ -230,10 +230,10 @@ Auth: optional in v1 (local/anonymous profiles); add accounts when sharing/savin
 ### Phase 0 — this plan (done when accepted)
 Product scope, model, scoring, UX, architecture.
 
-### Phase 1 — catalog MVP
-- Sync commercial Regions + AZs + Local Zones + Wavelength.
-- Seed edge city list + coordinates.
-- Admin/read API or static catalog JSON.
+### Phase 1 — catalog MVP (implemented under `advisor/`)
+- Curated seed for commercial Regions (+ synthetic AZs), Local Zones, Wavelength, CloudFront edge PoPs, RECs.
+- Optional live merge via `scripts/build_catalog.py --sync-aws` (`DescribeAvailabilityZones`).
+- Unified `data/catalog.json` + FastAPI read API (`/v1/catalog`, `/v1/nodes`, `/v1/closest`).
 
 ### Phase 2 — scoring + wizard
 - Questionnaire, hard filters, weighted scores, rationale text.

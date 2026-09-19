@@ -1,0 +1,182 @@
+[
+  {
+    "code": "us-west-2-lax-1a",
+    "group": "us-west-2-lax-1",
+    "name": "US West (Los Angeles)",
+    "parent_region": "us-west-2",
+    "city": "Los Angeles",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 34.0522,
+    "lon": -118.2437
+  },
+  {
+    "code": "us-west-2-lax-1b",
+    "group": "us-west-2-lax-1",
+    "name": "US West (Los Angeles)",
+    "parent_region": "us-west-2",
+    "city": "Los Angeles",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 34.0522,
+    "lon": -118.2437
+  },
+  {
+    "code": "us-east-1-nyc-1a",
+    "group": "us-east-1-nyc-1",
+    "name": "US East (New York City)",
+    "parent_region": "us-east-1",
+    "city": "New York",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 40.7128,
+    "lon": -74.006
+  },
+  {
+    "code": "us-east-1-bos-1a",
+    "group": "us-east-1-bos-1",
+    "name": "US East (Boston)",
+    "parent_region": "us-east-1",
+    "city": "Boston",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 42.3601,
+    "lon": -71.0589
+  },
+  {
+    "code": "us-east-1-chi-1a",
+    "group": "us-east-1-chi-1",
+    "name": "US East (Chicago)",
+    "parent_region": "us-east-1",
+    "city": "Chicago",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 41.8781,
+    "lon": -87.6298
+  },
+  {
+    "code": "us-east-1-dfw-1a",
+    "group": "us-east-1-dfw-1",
+    "name": "US East (Dallas)",
+    "parent_region": "us-east-1",
+    "city": "Dallas",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 32.7767,
+    "lon": -96.797
+  },
+  {
+    "code": "us-east-1-mia-1a",
+    "group": "us-east-1-mia-1",
+    "name": "US East (Miami)",
+    "parent_region": "us-east-1",
+    "city": "Miami",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 25.7617,
+    "lon": -80.1918
+  },
+  {
+    "code": "us-west-2-den-1a",
+    "group": "us-west-2-den-1",
+    "name": "US West (Denver)",
+    "parent_region": "us-west-2",
+    "city": "Denver",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 39.7392,
+    "lon": -104.9903
+  },
+  {
+    "code": "us-west-2-phx-1a",
+    "group": "us-west-2-phx-1",
+    "name": "US West (Phoenix)",
+    "parent_region": "us-west-2",
+    "city": "Phoenix",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 33.4484,
+    "lon": -112.074
+  },
+  {
+    "code": "us-west-2-sea-1a",
+    "group": "us-west-2-sea-1",
+    "name": "US West (Seattle)",
+    "parent_region": "us-west-2",
+    "city": "Seattle",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 47.6062,
+    "lon": -122.3321
+  },
+  {
+    "code": "eu-central-1-waw-1a",
+    "group": "eu-central-1-waw-1",
+    "name": "Europe (Warsaw)",
+    "parent_region": "eu-central-1",
+    "city": "Warsaw",
+    "country_codes": [
+      "PL"
+    ],
+    "lat": 52.2297,
+    "lon": 21.0122
+  },
+  {
+    "code": "eu-west-2-man-1a",
+    "group": "eu-west-2-man-1",
+    "name": "Europe (Manchester)",
+    "parent_region": "eu-west-2",
+    "city": "Manchester",
+    "country_codes": [
+      "GB"
+    ],
+    "lat": 53.4808,
+    "lon": -2.2426
+  },
+  {
+    "code": "ap-northeast-1-tky-1a",
+    "group": "ap-northeast-1-tky-1",
+    "name": "Asia Pacific (Tokyo)",
+    "parent_region": "ap-northeast-1",
+    "city": "Tokyo",
+    "country_codes": [
+      "JP"
+    ],
+    "lat": 35.6762,
+    "lon": 139.6503
+  },
+  {
+    "code": "ap-southeast-1-bkk-1a",
+    "group": "ap-southeast-1-bkk-1",
+    "name": "Asia Pacific (Bangkok)",
+    "parent_region": "ap-southeast-1",
+    "city": "Bangkok",
+    "country_codes": [
+      "TH"
+    ],
+    "lat": 13.7563,
+    "lon": 100.5018
+  },
+  {
+    "code": "ap-south-1-ccu-1a",
+    "group": "ap-south-1-ccu-1",
+    "name": "Asia Pacific (Kolkata)",
+    "parent_region": "ap-south-1",
+    "city": "Kolkata",
+    "country_codes": [
+      "IN"
+    ],
+    "lat": 22.5726,
+    "lon": 88.3639
+  }
+]
