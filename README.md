@@ -64,3 +64,39 @@ SMTP_PASSWORD=your-app-password
 | **Local agent** (`./scripts/job-agent start`) | Default — runs on your laptop/desktop |
 | systemd timer (`scripts/job-monitor.timer`) | Linux server without keeping a process running |
 | Airflow DAG (`dags/linkedin_job_monitor_dag.py`) | If you already use Airflow in this repo |
+
+## Resume Analysis Chatbot Agent
+
+An **LLM-powered chatbot** that analyzes resumes. Upload a PDF or text resume, then ask questions about strengths, skill gaps, ATS keywords, tailoring for roles, and interview prep.
+
+A sample resume is included at `data/sample_resume.pdf`.
+
+### Quick start
+
+```bash
+pip install -r requirements-resume-agent.txt
+
+# Optional: configure API key
+mkdir -p ~/.config/resume-agent
+cp config-resume-agent.env.example ~/.config/resume-agent/config.env
+# Edit config.env and set ANTHROPIC_API_KEY
+
+# Launch the chatbot
+./scripts/resume-agent
+```
+
+Open the URL shown in the terminal (default `http://localhost:8501`).
+
+### Supported providers
+
+| Provider | Config |
+|----------|--------|
+| **Anthropic** (default) | `ANTHROPIC_API_KEY`, optional `ANTHROPIC_BASE_URL` |
+| **AWS Bedrock** | `RESUME_AGENT_PROVIDER=bedrock`, `RESUME_AGENT_MODEL`, `AWS_REGION` |
+
+### Example questions
+
+- "Give me an overall assessment of this resume."
+- "What skills are missing for a Senior Data Engineer role?"
+- "Compare this resume against this job description: …"
+- "Suggest stronger bullet points for the most recent role."
