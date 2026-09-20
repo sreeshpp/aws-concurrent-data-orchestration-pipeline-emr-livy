@@ -1,0 +1,1736 @@
+[
+  {
+    "code": "edge-ca-calgary",
+    "city": "Calgary",
+    "country_codes": [
+      "CA"
+    ],
+    "lat": 51.0447,
+    "lon": -114.0719,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-ca-montreal",
+    "city": "Montreal",
+    "country_codes": [
+      "CA"
+    ],
+    "lat": 45.5017,
+    "lon": -73.5673,
+    "pop_count": 3,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-ca-toronto",
+    "city": "Toronto",
+    "country_codes": [
+      "CA"
+    ],
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-ca-vancouver",
+    "city": "Vancouver",
+    "country_codes": [
+      "CA"
+    ],
+    "lat": 49.2827,
+    "lon": -123.1207,
+    "pop_count": 3,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-mx-mexico-city",
+    "city": "Mexico City",
+    "country_codes": [
+      "MX"
+    ],
+    "lat": 19.4326,
+    "lon": -99.1332,
+    "pop_count": 10,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-atlanta",
+    "city": "Atlanta",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 33.749,
+    "lon": -84.388,
+    "pop_count": 29,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-boston",
+    "city": "Boston",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 42.3601,
+    "lon": -71.0589,
+    "pop_count": 6,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-chicago",
+    "city": "Chicago",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 41.8781,
+    "lon": -87.6298,
+    "pop_count": 32,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-columbus",
+    "city": "Columbus",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 39.9612,
+    "lon": -82.9988,
+    "pop_count": 5,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-dallas",
+    "city": "Dallas",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 32.7767,
+    "lon": -96.797,
+    "pop_count": 27,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-denver",
+    "city": "Denver",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 39.7392,
+    "lon": -104.9903,
+    "pop_count": 7,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-houston",
+    "city": "Houston",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 29.7604,
+    "lon": -95.3698,
+    "pop_count": 6,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-kansas-city",
+    "city": "Kansas City",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 39.0997,
+    "lon": -94.5786,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-los-angeles",
+    "city": "Los Angeles",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "pop_count": 21,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-miami",
+    "city": "Miami",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 25.7617,
+    "lon": -80.1918,
+    "pop_count": 19,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-minneapolis",
+    "city": "Minneapolis",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 44.9778,
+    "lon": -93.265,
+    "pop_count": 5,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-nashville",
+    "city": "Nashville",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 36.1627,
+    "lon": -86.7816,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-newark",
+    "city": "Newark",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 40.7357,
+    "lon": -74.1724,
+    "pop_count": 1,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-new-york",
+    "city": "New York",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 40.7128,
+    "lon": -74.006,
+    "pop_count": 26,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-philadelphia",
+    "city": "Philadelphia",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 39.9526,
+    "lon": -75.1652,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-phoenix",
+    "city": "Phoenix",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 33.4484,
+    "lon": -112.074,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-pittsburgh",
+    "city": "Pittsburgh",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 40.4406,
+    "lon": -79.9959,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-portland",
+    "city": "Portland",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 45.5152,
+    "lon": -122.6784,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-salt-lake-city",
+    "city": "Salt Lake City",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 40.7608,
+    "lon": -111.891,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-san-francisco",
+    "city": "San Francisco",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "pop_count": 14,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-seattle",
+    "city": "Seattle",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 47.6062,
+    "lon": -122.3321,
+    "pop_count": 12,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-tampa",
+    "city": "Tampa",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 27.9506,
+    "lon": -82.4572,
+    "pop_count": 3,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-us-washington",
+    "city": "Washington",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 38.9072,
+    "lon": -77.0369,
+    "pop_count": 31,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-ar-buenos-aires",
+    "city": "Buenos Aires",
+    "country_codes": [
+      "AR"
+    ],
+    "lat": -34.6037,
+    "lon": -58.3816,
+    "pop_count": 5,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-br-fortaleza",
+    "city": "Fortaleza",
+    "country_codes": [
+      "BR"
+    ],
+    "lat": -3.7172,
+    "lon": -38.5433,
+    "pop_count": 6,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-br-sao-paulo",
+    "city": "S\u00e3o Paulo",
+    "country_codes": [
+      "BR"
+    ],
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "pop_count": 16,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-br-rio-de-janeiro",
+    "city": "Rio de Janeiro",
+    "country_codes": [
+      "BR"
+    ],
+    "lat": -22.9068,
+    "lon": -43.1729,
+    "pop_count": 6,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-cl-santiago",
+    "city": "Santiago",
+    "country_codes": [
+      "CL"
+    ],
+    "lat": -33.4489,
+    "lon": -70.6693,
+    "pop_count": 5,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-co-bogota",
+    "city": "Bogot\u00e1",
+    "country_codes": [
+      "CO"
+    ],
+    "lat": 4.711,
+    "lon": -74.0721,
+    "pop_count": 5,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-pe-lima",
+    "city": "Lima",
+    "country_codes": [
+      "PE"
+    ],
+    "lat": -12.0464,
+    "lon": -77.0428,
+    "pop_count": 3,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-at-vienna",
+    "city": "Vienna",
+    "country_codes": [
+      "AT"
+    ],
+    "lat": 48.2082,
+    "lon": 16.3738,
+    "pop_count": 5,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-be-brussels",
+    "city": "Brussels",
+    "country_codes": [
+      "BE"
+    ],
+    "lat": 50.8503,
+    "lon": 4.3517,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-bg-sofia",
+    "city": "Sofia",
+    "country_codes": [
+      "BG"
+    ],
+    "lat": 42.6977,
+    "lon": 23.3219,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-hr-zagreb",
+    "city": "Zagreb",
+    "country_codes": [
+      "HR"
+    ],
+    "lat": 45.815,
+    "lon": 15.9819,
+    "pop_count": 1,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-cz-prague",
+    "city": "Prague",
+    "country_codes": [
+      "CZ"
+    ],
+    "lat": 50.0755,
+    "lon": 14.4378,
+    "pop_count": 1,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-dk-copenhagen",
+    "city": "Copenhagen",
+    "country_codes": [
+      "DK"
+    ],
+    "lat": 55.6761,
+    "lon": 12.5683,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-fi-helsinki",
+    "city": "Helsinki",
+    "country_codes": [
+      "FI"
+    ],
+    "lat": 60.1699,
+    "lon": 24.9384,
+    "pop_count": 7,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-fr-marseille",
+    "city": "Marseille",
+    "country_codes": [
+      "FR"
+    ],
+    "lat": 43.2965,
+    "lon": 5.3698,
+    "pop_count": 9,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-fr-paris",
+    "city": "Paris",
+    "country_codes": [
+      "FR"
+    ],
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "pop_count": 15,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-de-berlin",
+    "city": "Berlin",
+    "country_codes": [
+      "DE"
+    ],
+    "lat": 52.52,
+    "lon": 13.405,
+    "pop_count": 8,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-de-d\u00fcsseldorf",
+    "city": "D\u00fcsseldorf",
+    "country_codes": [
+      "DE"
+    ],
+    "lat": 51.2277,
+    "lon": 6.7735,
+    "pop_count": 6,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-de-frankfurt",
+    "city": "Frankfurt",
+    "country_codes": [
+      "DE"
+    ],
+    "lat": 50.1109,
+    "lon": 8.6821,
+    "pop_count": 33,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-de-hamburg",
+    "city": "Hamburg",
+    "country_codes": [
+      "DE"
+    ],
+    "lat": 53.5511,
+    "lon": 9.9937,
+    "pop_count": 6,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-de-munich",
+    "city": "Munich",
+    "country_codes": [
+      "DE"
+    ],
+    "lat": 48.1351,
+    "lon": 11.582,
+    "pop_count": 6,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-gr-athens",
+    "city": "Athens",
+    "country_codes": [
+      "GR"
+    ],
+    "lat": 37.9838,
+    "lon": 23.7275,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-hu-budapest",
+    "city": "Budapest",
+    "country_codes": [
+      "HU"
+    ],
+    "lat": 47.4979,
+    "lon": 19.0402,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-ie-dublin",
+    "city": "Dublin",
+    "country_codes": [
+      "IE"
+    ],
+    "lat": 53.3498,
+    "lon": -6.2603,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-it-milan",
+    "city": "Milan",
+    "country_codes": [
+      "IT"
+    ],
+    "lat": 45.4642,
+    "lon": 9.19,
+    "pop_count": 12,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-it-rome",
+    "city": "Rome",
+    "country_codes": [
+      "IT"
+    ],
+    "lat": 41.9028,
+    "lon": 12.4964,
+    "pop_count": 7,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-nl-amsterdam",
+    "city": "Amsterdam",
+    "country_codes": [
+      "NL"
+    ],
+    "lat": 52.3676,
+    "lon": 4.9041,
+    "pop_count": 11,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-no-oslo",
+    "city": "Oslo",
+    "country_codes": [
+      "NO"
+    ],
+    "lat": 59.9139,
+    "lon": 10.7522,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-pl-warsaw",
+    "city": "Warsaw",
+    "country_codes": [
+      "PL"
+    ],
+    "lat": 52.2297,
+    "lon": 21.0122,
+    "pop_count": 6,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-pt-lisbon",
+    "city": "Lisbon",
+    "country_codes": [
+      "PT"
+    ],
+    "lat": 38.7223,
+    "lon": -9.1393,
+    "pop_count": 1,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-ro-bucharest",
+    "city": "Bucharest",
+    "country_codes": [
+      "RO"
+    ],
+    "lat": 44.4268,
+    "lon": 26.1025,
+    "pop_count": 3,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-es-barcelona",
+    "city": "Barcelona",
+    "country_codes": [
+      "ES"
+    ],
+    "lat": 41.3874,
+    "lon": 2.1686,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-es-madrid",
+    "city": "Madrid",
+    "country_codes": [
+      "ES"
+    ],
+    "lat": 40.4168,
+    "lon": -3.7038,
+    "pop_count": 13,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-se-stockholm",
+    "city": "Stockholm",
+    "country_codes": [
+      "SE"
+    ],
+    "lat": 59.3293,
+    "lon": 18.0686,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-ch-zurich",
+    "city": "Zurich",
+    "country_codes": [
+      "CH"
+    ],
+    "lat": 47.3769,
+    "lon": 8.5417,
+    "pop_count": 3,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-gb-london",
+    "city": "London",
+    "country_codes": [
+      "GB"
+    ],
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "pop_count": 32,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-gb-manchester",
+    "city": "Manchester",
+    "country_codes": [
+      "GB"
+    ],
+    "lat": 53.4808,
+    "lon": -2.2426,
+    "pop_count": 6,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-bh-manama",
+    "city": "Manama",
+    "country_codes": [
+      "BH"
+    ],
+    "lat": 26.2235,
+    "lon": 50.5876,
+    "pop_count": 5,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-il-tel-aviv",
+    "city": "Tel Aviv",
+    "country_codes": [
+      "IL"
+    ],
+    "lat": 32.0853,
+    "lon": 34.7818,
+    "pop_count": 3,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-sa-jeddah",
+    "city": "Jeddah",
+    "country_codes": [
+      "SA"
+    ],
+    "lat": 21.4858,
+    "lon": 39.1925,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-sa-riyadh",
+    "city": "Riyadh",
+    "country_codes": [
+      "SA"
+    ],
+    "lat": 24.7136,
+    "lon": 46.6753,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-om-muscat",
+    "city": "Muscat",
+    "country_codes": [
+      "OM"
+    ],
+    "lat": 23.588,
+    "lon": 58.3829,
+    "pop_count": 3,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-qa-doha",
+    "city": "Doha",
+    "country_codes": [
+      "QA"
+    ],
+    "lat": 25.2854,
+    "lon": 51.531,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-tr-istanbul",
+    "city": "Istanbul",
+    "country_codes": [
+      "TR"
+    ],
+    "lat": 41.0082,
+    "lon": 28.9784,
+    "pop_count": 6,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-ae-dubai",
+    "city": "Dubai",
+    "country_codes": [
+      "AE"
+    ],
+    "lat": 25.2048,
+    "lon": 55.2708,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-eg-cairo",
+    "city": "Cairo",
+    "country_codes": [
+      "EG"
+    ],
+    "lat": 30.0444,
+    "lon": 31.2357,
+    "pop_count": 3,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-ke-nairobi",
+    "city": "Nairobi",
+    "country_codes": [
+      "KE"
+    ],
+    "lat": -1.2921,
+    "lon": 36.8219,
+    "pop_count": 3,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-ng-lagos",
+    "city": "Lagos",
+    "country_codes": [
+      "NG"
+    ],
+    "lat": 6.5244,
+    "lon": 3.3792,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-za-cape-town",
+    "city": "Cape Town",
+    "country_codes": [
+      "ZA"
+    ],
+    "lat": -33.9249,
+    "lon": 18.4241,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-za-johannesburg",
+    "city": "Johannesburg",
+    "country_codes": [
+      "ZA"
+    ],
+    "lat": -26.2041,
+    "lon": 28.0473,
+    "pop_count": 3,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-au-brisbane",
+    "city": "Brisbane",
+    "country_codes": [
+      "AU"
+    ],
+    "lat": -27.4698,
+    "lon": 153.0251,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-au-melbourne",
+    "city": "Melbourne",
+    "country_codes": [
+      "AU"
+    ],
+    "lat": -37.8136,
+    "lon": 144.9631,
+    "pop_count": 2,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-au-perth",
+    "city": "Perth",
+    "country_codes": [
+      "AU"
+    ],
+    "lat": -31.9505,
+    "lon": 115.8605,
+    "pop_count": 1,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-au-sydney",
+    "city": "Sydney",
+    "country_codes": [
+      "AU"
+    ],
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "pop_count": 5,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-hk-hong-kong",
+    "city": "Hong Kong",
+    "country_codes": [
+      "HK"
+    ],
+    "lat": 22.3193,
+    "lon": 114.1694,
+    "pop_count": 5,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-in-bengaluru",
+    "city": "Bengaluru",
+    "country_codes": [
+      "IN"
+    ],
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-in-chennai",
+    "city": "Chennai",
+    "country_codes": [
+      "IN"
+    ],
+    "lat": 13.0827,
+    "lon": 80.2707,
+    "pop_count": 5,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-in-kolkata",
+    "city": "Kolkata",
+    "country_codes": [
+      "IN"
+    ],
+    "lat": 22.5726,
+    "lon": 88.3639,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-in-pune",
+    "city": "Pune",
+    "country_codes": [
+      "IN"
+    ],
+    "lat": 18.5204,
+    "lon": 73.8567,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-in-mumbai",
+    "city": "Mumbai",
+    "country_codes": [
+      "IN"
+    ],
+    "lat": 19.076,
+    "lon": 72.8777,
+    "pop_count": 13,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-in-new-delhi",
+    "city": "New Delhi",
+    "country_codes": [
+      "IN"
+    ],
+    "lat": 28.6139,
+    "lon": 77.209,
+    "pop_count": 13,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-in-hyderabad",
+    "city": "Hyderabad",
+    "country_codes": [
+      "IN"
+    ],
+    "lat": 17.385,
+    "lon": 78.4867,
+    "pop_count": 6,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-id-jakarta",
+    "city": "Jakarta",
+    "country_codes": [
+      "ID"
+    ],
+    "lat": -6.2088,
+    "lon": 106.8456,
+    "pop_count": 8,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-jp-tokyo",
+    "city": "Tokyo",
+    "country_codes": [
+      "JP"
+    ],
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "pop_count": 27,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-jp-osaka",
+    "city": "Osaka",
+    "country_codes": [
+      "JP"
+    ],
+    "lat": 34.6937,
+    "lon": 135.5023,
+    "pop_count": 9,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-my-kuala-lumpur",
+    "city": "Kuala Lumpur",
+    "country_codes": [
+      "MY"
+    ],
+    "lat": 3.139,
+    "lon": 101.6869,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-nz-auckland",
+    "city": "Auckland",
+    "country_codes": [
+      "NZ"
+    ],
+    "lat": -36.8509,
+    "lon": 174.7645,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-ph-manila",
+    "city": "Manila",
+    "country_codes": [
+      "PH"
+    ],
+    "lat": 14.5995,
+    "lon": 120.9842,
+    "pop_count": 5,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-sg-singapore",
+    "city": "Singapore",
+    "country_codes": [
+      "SG"
+    ],
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "pop_count": 12,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-kr-seoul",
+    "city": "Seoul",
+    "country_codes": [
+      "KR"
+    ],
+    "lat": 37.5665,
+    "lon": 126.978,
+    "pop_count": 10,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-tw-taipei",
+    "city": "Taipei",
+    "country_codes": [
+      "TW"
+    ],
+    "lat": 25.033,
+    "lon": 121.5654,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-th-bangkok",
+    "city": "Bangkok",
+    "country_codes": [
+      "TH"
+    ],
+    "lat": 13.7563,
+    "lon": 100.5018,
+    "pop_count": 5,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-vn-hanoi",
+    "city": "Hanoi",
+    "country_codes": [
+      "VN"
+    ],
+    "lat": 21.0278,
+    "lon": 105.8342,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  },
+  {
+    "code": "edge-vn-ho-chi-minh-city",
+    "city": "Ho Chi Minh City",
+    "country_codes": [
+      "VN"
+    ],
+    "lat": 10.8231,
+    "lon": 106.6297,
+    "pop_count": 4,
+    "capabilities": [
+      "edge_cdn",
+      "edge_dns",
+      "edge_waf",
+      "lambda_at_edge",
+      "cloudfront_functions"
+    ]
+  }
+]

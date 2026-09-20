@@ -1,0 +1,101 @@
+[
+  {
+    "code": "rec-us-east-1",
+    "name": "N. Virginia Regional Edge Cache",
+    "parent_region": "us-east-1",
+    "city": "Ashburn",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 39.0438,
+    "lon": -77.4874
+  },
+  {
+    "code": "rec-us-west-2",
+    "name": "Oregon Regional Edge Cache",
+    "parent_region": "us-west-2",
+    "city": "Boardman",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 45.8399,
+    "lon": -119.7006
+  },
+  {
+    "code": "rec-eu-west-1",
+    "name": "Ireland Regional Edge Cache",
+    "parent_region": "eu-west-1",
+    "city": "Dublin",
+    "country_codes": [
+      "IE"
+    ],
+    "lat": 53.3498,
+    "lon": -6.2603
+  },
+  {
+    "code": "rec-eu-central-1",
+    "name": "Frankfurt Regional Edge Cache",
+    "parent_region": "eu-central-1",
+    "city": "Frankfurt",
+    "country_codes": [
+      "DE"
+    ],
+    "lat": 50.1109,
+    "lon": 8.6821
+  },
+  {
+    "code": "rec-ap-northeast-1",
+    "name": "Tokyo Regional Edge Cache",
+    "parent_region": "ap-northeast-1",
+    "city": "Tokyo",
+    "country_codes": [
+      "JP"
+    ],
+    "lat": 35.6762,
+    "lon": 139.6503
+  },
+  {
+    "code": "rec-ap-southeast-1",
+    "name": "Singapore Regional Edge Cache",
+    "parent_region": "ap-southeast-1",
+    "city": "Singapore",
+    "country_codes": [
+      "SG"
+    ],
+    "lat": 1.3521,
+    "lon": 103.8198
+  },
+  {
+    "code": "rec-ap-southeast-2",
+    "name": "Sydney Regional Edge Cache",
+    "parent_region": "ap-southeast-2",
+    "city": "Sydney",
+    "country_codes": [
+      "AU"
+    ],
+    "lat": -33.8688,
+    "lon": 151.2093
+  },
+  {
+    "code": "rec-ap-south-1",
+    "name": "Mumbai Regional Edge Cache",
+    "parent_region": "ap-south-1",
+    "city": "Mumbai",
+    "country_codes": [
+      "IN"
+    ],
+    "lat": 19.076,
+    "lon": 72.8777
+  },
+  {
+    "code": "rec-sa-east-1",
+    "name": "S\u00e3o Paulo Regional Edge Cache",
+    "parent_region": "sa-east-1",
+    "city": "S\u00e3o Paulo",
+    "country_codes": [
+      "BR"
+    ],
+    "lat": -23.5558,
+    "lon": -46.6396
+  }
+]

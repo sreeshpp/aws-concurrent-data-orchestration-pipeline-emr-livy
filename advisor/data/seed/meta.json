@@ -1,0 +1,10 @@
+{
+  "partition": "aws",
+  "source": "curated-seed",
+  "notes": "Commercial partition only. Edge PoPs are city-level (not street addresses). Compliance tags are guidance, not certification. Local/Wavelength lists are representative; use sync_from_aws for account-specific completeness.",
+  "sources": [
+    "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
+    "https://aws.amazon.com/cloudfront/features/",
+    "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+  ]
+}

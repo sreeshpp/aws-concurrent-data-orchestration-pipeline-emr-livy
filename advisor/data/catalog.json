@@ -1,0 +1,8208 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "generated_at": "2026-09-19T18:41:19+00:00",
+    "partition": "aws",
+    "source": "curated-seed",
+    "notes": "Commercial partition only. Edge PoPs are city-level (not street addresses). Compliance tags are guidance, not certification. Local/Wavelength lists are representative; use sync_from_aws for account-specific completeness.",
+    "sources": [
+      "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
+      "https://aws.amazon.com/cloudfront/features/",
+      "https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html"
+    ],
+    "counts": {
+      "region": 32,
+      "az": 100,
+      "local_zone": 15,
+      "wavelength": 12,
+      "edge_pop": 102,
+      "regional_edge_cache": 9
+    }
+  },
+  "nodes": [
+    {
+      "id": "region:us-east-1",
+      "type": "region",
+      "code": "us-east-1",
+      "display_name": "US East (N. Virginia)",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.0438,
+        "lon": -77.4874
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "United States of America",
+        "city": "Ashburn",
+        "az_count": 6
+      }
+    },
+    {
+      "id": "az:us-east-1a",
+      "type": "az",
+      "code": "us-east-1a",
+      "display_name": "US East (N. Virginia) AZ a",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.0438,
+        "lon": -77.4874
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:us-east-1b",
+      "type": "az",
+      "code": "us-east-1b",
+      "display_name": "US East (N. Virginia) AZ b",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.0438,
+        "lon": -77.4874
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:us-east-1c",
+      "type": "az",
+      "code": "us-east-1c",
+      "display_name": "US East (N. Virginia) AZ c",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.0438,
+        "lon": -77.4874
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "az:us-east-1d",
+      "type": "az",
+      "code": "us-east-1d",
+      "display_name": "US East (N. Virginia) AZ d",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.0438,
+        "lon": -77.4874
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "d"
+      }
+    },
+    {
+      "id": "az:us-east-1e",
+      "type": "az",
+      "code": "us-east-1e",
+      "display_name": "US East (N. Virginia) AZ e",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.0438,
+        "lon": -77.4874
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "e"
+      }
+    },
+    {
+      "id": "az:us-east-1f",
+      "type": "az",
+      "code": "us-east-1f",
+      "display_name": "US East (N. Virginia) AZ f",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.0438,
+        "lon": -77.4874
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "f"
+      }
+    },
+    {
+      "id": "region:us-east-2",
+      "type": "region",
+      "code": "us-east-2",
+      "display_name": "US East (Ohio)",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.9612,
+        "lon": -82.9988
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "United States of America",
+        "city": "Columbus",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:us-east-2a",
+      "type": "az",
+      "code": "us-east-2a",
+      "display_name": "US East (Ohio) AZ a",
+      "parent_region_id": "region:us-east-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.9612,
+        "lon": -82.9988
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:us-east-2b",
+      "type": "az",
+      "code": "us-east-2b",
+      "display_name": "US East (Ohio) AZ b",
+      "parent_region_id": "region:us-east-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.9612,
+        "lon": -82.9988
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:us-east-2c",
+      "type": "az",
+      "code": "us-east-2c",
+      "display_name": "US East (Ohio) AZ c",
+      "parent_region_id": "region:us-east-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.9612,
+        "lon": -82.9988
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:us-west-1",
+      "type": "region",
+      "code": "us-west-1",
+      "display_name": "US West (N. California)",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 37.7749,
+        "lon": -122.4194
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "United States of America",
+        "city": "San Francisco",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:us-west-1a",
+      "type": "az",
+      "code": "us-west-1a",
+      "display_name": "US West (N. California) AZ a",
+      "parent_region_id": "region:us-west-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 37.7749,
+        "lon": -122.4194
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:us-west-1b",
+      "type": "az",
+      "code": "us-west-1b",
+      "display_name": "US West (N. California) AZ b",
+      "parent_region_id": "region:us-west-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 37.7749,
+        "lon": -122.4194
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:us-west-1c",
+      "type": "az",
+      "code": "us-west-1c",
+      "display_name": "US West (N. California) AZ c",
+      "parent_region_id": "region:us-west-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 37.7749,
+        "lon": -122.4194
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:us-west-2",
+      "type": "region",
+      "code": "us-west-2",
+      "display_name": "US West (Oregon)",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 45.8399,
+        "lon": -119.7006
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "United States of America",
+        "city": "Boardman",
+        "az_count": 4
+      }
+    },
+    {
+      "id": "az:us-west-2a",
+      "type": "az",
+      "code": "us-west-2a",
+      "display_name": "US West (Oregon) AZ a",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 45.8399,
+        "lon": -119.7006
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:us-west-2b",
+      "type": "az",
+      "code": "us-west-2b",
+      "display_name": "US West (Oregon) AZ b",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 45.8399,
+        "lon": -119.7006
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:us-west-2c",
+      "type": "az",
+      "code": "us-west-2c",
+      "display_name": "US West (Oregon) AZ c",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 45.8399,
+        "lon": -119.7006
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "az:us-west-2d",
+      "type": "az",
+      "code": "us-west-2d",
+      "display_name": "US West (Oregon) AZ d",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 45.8399,
+        "lon": -119.7006
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso",
+        "fedramp"
+      ],
+      "privacy_buckets": [
+        "us-only"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "d"
+      }
+    },
+    {
+      "id": "region:ca-central-1",
+      "type": "region",
+      "code": "ca-central-1",
+      "display_name": "Canada (Central)",
+      "parent_region_id": null,
+      "country_codes": [
+        "CA"
+      ],
+      "coordinates": {
+        "lat": 45.5017,
+        "lon": -73.5673
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "canada"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Canada",
+        "city": "Montreal",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ca-central-1a",
+      "type": "az",
+      "code": "ca-central-1a",
+      "display_name": "Canada (Central) AZ a",
+      "parent_region_id": "region:ca-central-1",
+      "country_codes": [
+        "CA"
+      ],
+      "coordinates": {
+        "lat": 45.5017,
+        "lon": -73.5673
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "canada"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ca-central-1b",
+      "type": "az",
+      "code": "ca-central-1b",
+      "display_name": "Canada (Central) AZ b",
+      "parent_region_id": "region:ca-central-1",
+      "country_codes": [
+        "CA"
+      ],
+      "coordinates": {
+        "lat": 45.5017,
+        "lon": -73.5673
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "canada"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ca-central-1c",
+      "type": "az",
+      "code": "ca-central-1c",
+      "display_name": "Canada (Central) AZ c",
+      "parent_region_id": "region:ca-central-1",
+      "country_codes": [
+        "CA"
+      ],
+      "coordinates": {
+        "lat": 45.5017,
+        "lon": -73.5673
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "canada"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ca-west-1",
+      "type": "region",
+      "code": "ca-west-1",
+      "display_name": "Canada West (Calgary)",
+      "parent_region_id": null,
+      "country_codes": [
+        "CA"
+      ],
+      "coordinates": {
+        "lat": 51.0447,
+        "lon": -114.0719
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "canada"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Canada",
+        "city": "Calgary",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ca-west-1a",
+      "type": "az",
+      "code": "ca-west-1a",
+      "display_name": "Canada West (Calgary) AZ a",
+      "parent_region_id": "region:ca-west-1",
+      "country_codes": [
+        "CA"
+      ],
+      "coordinates": {
+        "lat": 51.0447,
+        "lon": -114.0719
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "canada"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ca-west-1b",
+      "type": "az",
+      "code": "ca-west-1b",
+      "display_name": "Canada West (Calgary) AZ b",
+      "parent_region_id": "region:ca-west-1",
+      "country_codes": [
+        "CA"
+      ],
+      "coordinates": {
+        "lat": 51.0447,
+        "lon": -114.0719
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "canada"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ca-west-1c",
+      "type": "az",
+      "code": "ca-west-1c",
+      "display_name": "Canada West (Calgary) AZ c",
+      "parent_region_id": "region:ca-west-1",
+      "country_codes": [
+        "CA"
+      ],
+      "coordinates": {
+        "lat": 51.0447,
+        "lon": -114.0719
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "canada"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:mx-central-1",
+      "type": "region",
+      "code": "mx-central-1",
+      "display_name": "Mexico (Central)",
+      "parent_region_id": null,
+      "country_codes": [
+        "MX"
+      ],
+      "coordinates": {
+        "lat": 20.5888,
+        "lon": -100.3899
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "mexico"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Mexico",
+        "city": "Querétaro",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:mx-central-1a",
+      "type": "az",
+      "code": "mx-central-1a",
+      "display_name": "Mexico (Central) AZ a",
+      "parent_region_id": "region:mx-central-1",
+      "country_codes": [
+        "MX"
+      ],
+      "coordinates": {
+        "lat": 20.5888,
+        "lon": -100.3899
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "mexico"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:mx-central-1b",
+      "type": "az",
+      "code": "mx-central-1b",
+      "display_name": "Mexico (Central) AZ b",
+      "parent_region_id": "region:mx-central-1",
+      "country_codes": [
+        "MX"
+      ],
+      "coordinates": {
+        "lat": 20.5888,
+        "lon": -100.3899
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "mexico"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:mx-central-1c",
+      "type": "az",
+      "code": "mx-central-1c",
+      "display_name": "Mexico (Central) AZ c",
+      "parent_region_id": "region:mx-central-1",
+      "country_codes": [
+        "MX"
+      ],
+      "coordinates": {
+        "lat": 20.5888,
+        "lon": -100.3899
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "mexico"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:sa-east-1",
+      "type": "region",
+      "code": "sa-east-1",
+      "display_name": "South America (São Paulo)",
+      "parent_region_id": null,
+      "country_codes": [
+        "BR"
+      ],
+      "coordinates": {
+        "lat": -23.5558,
+        "lon": -46.6396
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "brazil"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Brazil",
+        "city": "São Paulo",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:sa-east-1a",
+      "type": "az",
+      "code": "sa-east-1a",
+      "display_name": "South America (São Paulo) AZ a",
+      "parent_region_id": "region:sa-east-1",
+      "country_codes": [
+        "BR"
+      ],
+      "coordinates": {
+        "lat": -23.5558,
+        "lon": -46.6396
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "brazil"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:sa-east-1b",
+      "type": "az",
+      "code": "sa-east-1b",
+      "display_name": "South America (São Paulo) AZ b",
+      "parent_region_id": "region:sa-east-1",
+      "country_codes": [
+        "BR"
+      ],
+      "coordinates": {
+        "lat": -23.5558,
+        "lon": -46.6396
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "brazil"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:sa-east-1c",
+      "type": "az",
+      "code": "sa-east-1c",
+      "display_name": "South America (São Paulo) AZ c",
+      "parent_region_id": "region:sa-east-1",
+      "country_codes": [
+        "BR"
+      ],
+      "coordinates": {
+        "lat": -23.5558,
+        "lon": -46.6396
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "brazil"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:eu-west-1",
+      "type": "region",
+      "code": "eu-west-1",
+      "display_name": "Europe (Ireland)",
+      "parent_region_id": null,
+      "country_codes": [
+        "IE"
+      ],
+      "coordinates": {
+        "lat": 53.3498,
+        "lon": -6.2603
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Ireland",
+        "city": "Dublin",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:eu-west-1a",
+      "type": "az",
+      "code": "eu-west-1a",
+      "display_name": "Europe (Ireland) AZ a",
+      "parent_region_id": "region:eu-west-1",
+      "country_codes": [
+        "IE"
+      ],
+      "coordinates": {
+        "lat": 53.3498,
+        "lon": -6.2603
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:eu-west-1b",
+      "type": "az",
+      "code": "eu-west-1b",
+      "display_name": "Europe (Ireland) AZ b",
+      "parent_region_id": "region:eu-west-1",
+      "country_codes": [
+        "IE"
+      ],
+      "coordinates": {
+        "lat": 53.3498,
+        "lon": -6.2603
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:eu-west-1c",
+      "type": "az",
+      "code": "eu-west-1c",
+      "display_name": "Europe (Ireland) AZ c",
+      "parent_region_id": "region:eu-west-1",
+      "country_codes": [
+        "IE"
+      ],
+      "coordinates": {
+        "lat": 53.3498,
+        "lon": -6.2603
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:eu-west-2",
+      "type": "region",
+      "code": "eu-west-2",
+      "display_name": "Europe (London)",
+      "parent_region_id": null,
+      "country_codes": [
+        "GB"
+      ],
+      "coordinates": {
+        "lat": 51.5074,
+        "lon": -0.1278
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "uk",
+        "gdpr"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "United Kingdom",
+        "city": "London",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:eu-west-2a",
+      "type": "az",
+      "code": "eu-west-2a",
+      "display_name": "Europe (London) AZ a",
+      "parent_region_id": "region:eu-west-2",
+      "country_codes": [
+        "GB"
+      ],
+      "coordinates": {
+        "lat": 51.5074,
+        "lon": -0.1278
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "uk",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:eu-west-2b",
+      "type": "az",
+      "code": "eu-west-2b",
+      "display_name": "Europe (London) AZ b",
+      "parent_region_id": "region:eu-west-2",
+      "country_codes": [
+        "GB"
+      ],
+      "coordinates": {
+        "lat": 51.5074,
+        "lon": -0.1278
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "uk",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:eu-west-2c",
+      "type": "az",
+      "code": "eu-west-2c",
+      "display_name": "Europe (London) AZ c",
+      "parent_region_id": "region:eu-west-2",
+      "country_codes": [
+        "GB"
+      ],
+      "coordinates": {
+        "lat": 51.5074,
+        "lon": -0.1278
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "uk",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:eu-west-3",
+      "type": "region",
+      "code": "eu-west-3",
+      "display_name": "Europe (Paris)",
+      "parent_region_id": null,
+      "country_codes": [
+        "FR"
+      ],
+      "coordinates": {
+        "lat": 48.8566,
+        "lon": 2.3522
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "France",
+        "city": "Paris",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:eu-west-3a",
+      "type": "az",
+      "code": "eu-west-3a",
+      "display_name": "Europe (Paris) AZ a",
+      "parent_region_id": "region:eu-west-3",
+      "country_codes": [
+        "FR"
+      ],
+      "coordinates": {
+        "lat": 48.8566,
+        "lon": 2.3522
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:eu-west-3b",
+      "type": "az",
+      "code": "eu-west-3b",
+      "display_name": "Europe (Paris) AZ b",
+      "parent_region_id": "region:eu-west-3",
+      "country_codes": [
+        "FR"
+      ],
+      "coordinates": {
+        "lat": 48.8566,
+        "lon": 2.3522
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:eu-west-3c",
+      "type": "az",
+      "code": "eu-west-3c",
+      "display_name": "Europe (Paris) AZ c",
+      "parent_region_id": "region:eu-west-3",
+      "country_codes": [
+        "FR"
+      ],
+      "coordinates": {
+        "lat": 48.8566,
+        "lon": 2.3522
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:eu-central-1",
+      "type": "region",
+      "code": "eu-central-1",
+      "display_name": "Europe (Frankfurt)",
+      "parent_region_id": null,
+      "country_codes": [
+        "DE"
+      ],
+      "coordinates": {
+        "lat": 50.1109,
+        "lon": 8.6821
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Germany",
+        "city": "Frankfurt",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:eu-central-1a",
+      "type": "az",
+      "code": "eu-central-1a",
+      "display_name": "Europe (Frankfurt) AZ a",
+      "parent_region_id": "region:eu-central-1",
+      "country_codes": [
+        "DE"
+      ],
+      "coordinates": {
+        "lat": 50.1109,
+        "lon": 8.6821
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:eu-central-1b",
+      "type": "az",
+      "code": "eu-central-1b",
+      "display_name": "Europe (Frankfurt) AZ b",
+      "parent_region_id": "region:eu-central-1",
+      "country_codes": [
+        "DE"
+      ],
+      "coordinates": {
+        "lat": 50.1109,
+        "lon": 8.6821
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:eu-central-1c",
+      "type": "az",
+      "code": "eu-central-1c",
+      "display_name": "Europe (Frankfurt) AZ c",
+      "parent_region_id": "region:eu-central-1",
+      "country_codes": [
+        "DE"
+      ],
+      "coordinates": {
+        "lat": 50.1109,
+        "lon": 8.6821
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:eu-central-2",
+      "type": "region",
+      "code": "eu-central-2",
+      "display_name": "Europe (Zurich)",
+      "parent_region_id": null,
+      "country_codes": [
+        "CH"
+      ],
+      "coordinates": {
+        "lat": 47.3769,
+        "lon": 8.5417
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "switzerland",
+        "gdpr"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Switzerland",
+        "city": "Zurich",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:eu-central-2a",
+      "type": "az",
+      "code": "eu-central-2a",
+      "display_name": "Europe (Zurich) AZ a",
+      "parent_region_id": "region:eu-central-2",
+      "country_codes": [
+        "CH"
+      ],
+      "coordinates": {
+        "lat": 47.3769,
+        "lon": 8.5417
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "switzerland",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:eu-central-2b",
+      "type": "az",
+      "code": "eu-central-2b",
+      "display_name": "Europe (Zurich) AZ b",
+      "parent_region_id": "region:eu-central-2",
+      "country_codes": [
+        "CH"
+      ],
+      "coordinates": {
+        "lat": 47.3769,
+        "lon": 8.5417
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "switzerland",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:eu-central-2c",
+      "type": "az",
+      "code": "eu-central-2c",
+      "display_name": "Europe (Zurich) AZ c",
+      "parent_region_id": "region:eu-central-2",
+      "country_codes": [
+        "CH"
+      ],
+      "coordinates": {
+        "lat": 47.3769,
+        "lon": 8.5417
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "switzerland",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:eu-north-1",
+      "type": "region",
+      "code": "eu-north-1",
+      "display_name": "Europe (Stockholm)",
+      "parent_region_id": null,
+      "country_codes": [
+        "SE"
+      ],
+      "coordinates": {
+        "lat": 59.3293,
+        "lon": 18.0686
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Sweden",
+        "city": "Stockholm",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:eu-north-1a",
+      "type": "az",
+      "code": "eu-north-1a",
+      "display_name": "Europe (Stockholm) AZ a",
+      "parent_region_id": "region:eu-north-1",
+      "country_codes": [
+        "SE"
+      ],
+      "coordinates": {
+        "lat": 59.3293,
+        "lon": 18.0686
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:eu-north-1b",
+      "type": "az",
+      "code": "eu-north-1b",
+      "display_name": "Europe (Stockholm) AZ b",
+      "parent_region_id": "region:eu-north-1",
+      "country_codes": [
+        "SE"
+      ],
+      "coordinates": {
+        "lat": 59.3293,
+        "lon": 18.0686
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:eu-north-1c",
+      "type": "az",
+      "code": "eu-north-1c",
+      "display_name": "Europe (Stockholm) AZ c",
+      "parent_region_id": "region:eu-north-1",
+      "country_codes": [
+        "SE"
+      ],
+      "coordinates": {
+        "lat": 59.3293,
+        "lon": 18.0686
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:eu-south-1",
+      "type": "region",
+      "code": "eu-south-1",
+      "display_name": "Europe (Milan)",
+      "parent_region_id": null,
+      "country_codes": [
+        "IT"
+      ],
+      "coordinates": {
+        "lat": 45.4642,
+        "lon": 9.19
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Italy",
+        "city": "Milan",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:eu-south-1a",
+      "type": "az",
+      "code": "eu-south-1a",
+      "display_name": "Europe (Milan) AZ a",
+      "parent_region_id": "region:eu-south-1",
+      "country_codes": [
+        "IT"
+      ],
+      "coordinates": {
+        "lat": 45.4642,
+        "lon": 9.19
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:eu-south-1b",
+      "type": "az",
+      "code": "eu-south-1b",
+      "display_name": "Europe (Milan) AZ b",
+      "parent_region_id": "region:eu-south-1",
+      "country_codes": [
+        "IT"
+      ],
+      "coordinates": {
+        "lat": 45.4642,
+        "lon": 9.19
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:eu-south-1c",
+      "type": "az",
+      "code": "eu-south-1c",
+      "display_name": "Europe (Milan) AZ c",
+      "parent_region_id": "region:eu-south-1",
+      "country_codes": [
+        "IT"
+      ],
+      "coordinates": {
+        "lat": 45.4642,
+        "lon": 9.19
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:eu-south-2",
+      "type": "region",
+      "code": "eu-south-2",
+      "display_name": "Europe (Spain)",
+      "parent_region_id": null,
+      "country_codes": [
+        "ES"
+      ],
+      "coordinates": {
+        "lat": 41.5976,
+        "lon": -0.9057
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Spain",
+        "city": "Aragón",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:eu-south-2a",
+      "type": "az",
+      "code": "eu-south-2a",
+      "display_name": "Europe (Spain) AZ a",
+      "parent_region_id": "region:eu-south-2",
+      "country_codes": [
+        "ES"
+      ],
+      "coordinates": {
+        "lat": 41.5976,
+        "lon": -0.9057
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:eu-south-2b",
+      "type": "az",
+      "code": "eu-south-2b",
+      "display_name": "Europe (Spain) AZ b",
+      "parent_region_id": "region:eu-south-2",
+      "country_codes": [
+        "ES"
+      ],
+      "coordinates": {
+        "lat": 41.5976,
+        "lon": -0.9057
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:eu-south-2c",
+      "type": "az",
+      "code": "eu-south-2c",
+      "display_name": "Europe (Spain) AZ c",
+      "parent_region_id": "region:eu-south-2",
+      "country_codes": [
+        "ES"
+      ],
+      "coordinates": {
+        "lat": 41.5976,
+        "lon": -0.9057
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "gdpr",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "eu-data-residency",
+        "gdpr"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:af-south-1",
+      "type": "region",
+      "code": "af-south-1",
+      "display_name": "Africa (Cape Town)",
+      "parent_region_id": null,
+      "country_codes": [
+        "ZA"
+      ],
+      "coordinates": {
+        "lat": -33.9249,
+        "lon": 18.4241
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "africa"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "South Africa",
+        "city": "Cape Town",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:af-south-1a",
+      "type": "az",
+      "code": "af-south-1a",
+      "display_name": "Africa (Cape Town) AZ a",
+      "parent_region_id": "region:af-south-1",
+      "country_codes": [
+        "ZA"
+      ],
+      "coordinates": {
+        "lat": -33.9249,
+        "lon": 18.4241
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "africa"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:af-south-1b",
+      "type": "az",
+      "code": "af-south-1b",
+      "display_name": "Africa (Cape Town) AZ b",
+      "parent_region_id": "region:af-south-1",
+      "country_codes": [
+        "ZA"
+      ],
+      "coordinates": {
+        "lat": -33.9249,
+        "lon": 18.4241
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "africa"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:af-south-1c",
+      "type": "az",
+      "code": "af-south-1c",
+      "display_name": "Africa (Cape Town) AZ c",
+      "parent_region_id": "region:af-south-1",
+      "country_codes": [
+        "ZA"
+      ],
+      "coordinates": {
+        "lat": -33.9249,
+        "lon": 18.4241
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "africa"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:me-south-1",
+      "type": "region",
+      "code": "me-south-1",
+      "display_name": "Middle East (Bahrain)",
+      "parent_region_id": null,
+      "country_codes": [
+        "BH"
+      ],
+      "coordinates": {
+        "lat": 26.2235,
+        "lon": 50.5876
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "middle-east"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Bahrain",
+        "city": "Manama",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:me-south-1a",
+      "type": "az",
+      "code": "me-south-1a",
+      "display_name": "Middle East (Bahrain) AZ a",
+      "parent_region_id": "region:me-south-1",
+      "country_codes": [
+        "BH"
+      ],
+      "coordinates": {
+        "lat": 26.2235,
+        "lon": 50.5876
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "middle-east"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:me-south-1b",
+      "type": "az",
+      "code": "me-south-1b",
+      "display_name": "Middle East (Bahrain) AZ b",
+      "parent_region_id": "region:me-south-1",
+      "country_codes": [
+        "BH"
+      ],
+      "coordinates": {
+        "lat": 26.2235,
+        "lon": 50.5876
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "middle-east"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:me-south-1c",
+      "type": "az",
+      "code": "me-south-1c",
+      "display_name": "Middle East (Bahrain) AZ c",
+      "parent_region_id": "region:me-south-1",
+      "country_codes": [
+        "BH"
+      ],
+      "coordinates": {
+        "lat": 26.2235,
+        "lon": 50.5876
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "middle-east"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:me-central-1",
+      "type": "region",
+      "code": "me-central-1",
+      "display_name": "Middle East (UAE)",
+      "parent_region_id": null,
+      "country_codes": [
+        "AE"
+      ],
+      "coordinates": {
+        "lat": 25.2048,
+        "lon": 55.2708
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "middle-east"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "United Arab Emirates",
+        "city": "Dubai",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:me-central-1a",
+      "type": "az",
+      "code": "me-central-1a",
+      "display_name": "Middle East (UAE) AZ a",
+      "parent_region_id": "region:me-central-1",
+      "country_codes": [
+        "AE"
+      ],
+      "coordinates": {
+        "lat": 25.2048,
+        "lon": 55.2708
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "middle-east"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:me-central-1b",
+      "type": "az",
+      "code": "me-central-1b",
+      "display_name": "Middle East (UAE) AZ b",
+      "parent_region_id": "region:me-central-1",
+      "country_codes": [
+        "AE"
+      ],
+      "coordinates": {
+        "lat": 25.2048,
+        "lon": 55.2708
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "middle-east"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:me-central-1c",
+      "type": "az",
+      "code": "me-central-1c",
+      "display_name": "Middle East (UAE) AZ c",
+      "parent_region_id": "region:me-central-1",
+      "country_codes": [
+        "AE"
+      ],
+      "coordinates": {
+        "lat": 25.2048,
+        "lon": 55.2708
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "middle-east"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:il-central-1",
+      "type": "region",
+      "code": "il-central-1",
+      "display_name": "Israel (Tel Aviv)",
+      "parent_region_id": null,
+      "country_codes": [
+        "IL"
+      ],
+      "coordinates": {
+        "lat": 32.0853,
+        "lon": 34.7818
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "israel"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Israel",
+        "city": "Tel Aviv",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:il-central-1a",
+      "type": "az",
+      "code": "il-central-1a",
+      "display_name": "Israel (Tel Aviv) AZ a",
+      "parent_region_id": "region:il-central-1",
+      "country_codes": [
+        "IL"
+      ],
+      "coordinates": {
+        "lat": 32.0853,
+        "lon": 34.7818
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "israel"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:il-central-1b",
+      "type": "az",
+      "code": "il-central-1b",
+      "display_name": "Israel (Tel Aviv) AZ b",
+      "parent_region_id": "region:il-central-1",
+      "country_codes": [
+        "IL"
+      ],
+      "coordinates": {
+        "lat": 32.0853,
+        "lon": 34.7818
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "israel"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:il-central-1c",
+      "type": "az",
+      "code": "il-central-1c",
+      "display_name": "Israel (Tel Aviv) AZ c",
+      "parent_region_id": "region:il-central-1",
+      "country_codes": [
+        "IL"
+      ],
+      "coordinates": {
+        "lat": 32.0853,
+        "lon": 34.7818
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "israel"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ap-south-1",
+      "type": "region",
+      "code": "ap-south-1",
+      "display_name": "Asia Pacific (Mumbai)",
+      "parent_region_id": null,
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 19.076,
+        "lon": 72.8777
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "india"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "India",
+        "city": "Mumbai",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ap-south-1a",
+      "type": "az",
+      "code": "ap-south-1a",
+      "display_name": "Asia Pacific (Mumbai) AZ a",
+      "parent_region_id": "region:ap-south-1",
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 19.076,
+        "lon": 72.8777
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "india"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ap-south-1b",
+      "type": "az",
+      "code": "ap-south-1b",
+      "display_name": "Asia Pacific (Mumbai) AZ b",
+      "parent_region_id": "region:ap-south-1",
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 19.076,
+        "lon": 72.8777
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "india"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ap-south-1c",
+      "type": "az",
+      "code": "ap-south-1c",
+      "display_name": "Asia Pacific (Mumbai) AZ c",
+      "parent_region_id": "region:ap-south-1",
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 19.076,
+        "lon": 72.8777
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "india"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ap-south-2",
+      "type": "region",
+      "code": "ap-south-2",
+      "display_name": "Asia Pacific (Hyderabad)",
+      "parent_region_id": null,
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 17.385,
+        "lon": 78.4867
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "india"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "India",
+        "city": "Hyderabad",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ap-south-2a",
+      "type": "az",
+      "code": "ap-south-2a",
+      "display_name": "Asia Pacific (Hyderabad) AZ a",
+      "parent_region_id": "region:ap-south-2",
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 17.385,
+        "lon": 78.4867
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "india"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ap-south-2b",
+      "type": "az",
+      "code": "ap-south-2b",
+      "display_name": "Asia Pacific (Hyderabad) AZ b",
+      "parent_region_id": "region:ap-south-2",
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 17.385,
+        "lon": 78.4867
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "india"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ap-south-2c",
+      "type": "az",
+      "code": "ap-south-2c",
+      "display_name": "Asia Pacific (Hyderabad) AZ c",
+      "parent_region_id": "region:ap-south-2",
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 17.385,
+        "lon": 78.4867
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "india"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ap-southeast-1",
+      "type": "region",
+      "code": "ap-southeast-1",
+      "display_name": "Asia Pacific (Singapore)",
+      "parent_region_id": null,
+      "country_codes": [
+        "SG"
+      ],
+      "coordinates": {
+        "lat": 1.3521,
+        "lon": 103.8198
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Singapore",
+        "city": "Singapore",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ap-southeast-1a",
+      "type": "az",
+      "code": "ap-southeast-1a",
+      "display_name": "Asia Pacific (Singapore) AZ a",
+      "parent_region_id": "region:ap-southeast-1",
+      "country_codes": [
+        "SG"
+      ],
+      "coordinates": {
+        "lat": 1.3521,
+        "lon": 103.8198
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ap-southeast-1b",
+      "type": "az",
+      "code": "ap-southeast-1b",
+      "display_name": "Asia Pacific (Singapore) AZ b",
+      "parent_region_id": "region:ap-southeast-1",
+      "country_codes": [
+        "SG"
+      ],
+      "coordinates": {
+        "lat": 1.3521,
+        "lon": 103.8198
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ap-southeast-1c",
+      "type": "az",
+      "code": "ap-southeast-1c",
+      "display_name": "Asia Pacific (Singapore) AZ c",
+      "parent_region_id": "region:ap-southeast-1",
+      "country_codes": [
+        "SG"
+      ],
+      "coordinates": {
+        "lat": 1.3521,
+        "lon": 103.8198
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ap-southeast-2",
+      "type": "region",
+      "code": "ap-southeast-2",
+      "display_name": "Asia Pacific (Sydney)",
+      "parent_region_id": null,
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -33.8688,
+        "lon": 151.2093
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "australia"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Australia",
+        "city": "Sydney",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ap-southeast-2a",
+      "type": "az",
+      "code": "ap-southeast-2a",
+      "display_name": "Asia Pacific (Sydney) AZ a",
+      "parent_region_id": "region:ap-southeast-2",
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -33.8688,
+        "lon": 151.2093
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "australia"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ap-southeast-2b",
+      "type": "az",
+      "code": "ap-southeast-2b",
+      "display_name": "Asia Pacific (Sydney) AZ b",
+      "parent_region_id": "region:ap-southeast-2",
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -33.8688,
+        "lon": 151.2093
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "australia"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ap-southeast-2c",
+      "type": "az",
+      "code": "ap-southeast-2c",
+      "display_name": "Asia Pacific (Sydney) AZ c",
+      "parent_region_id": "region:ap-southeast-2",
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -33.8688,
+        "lon": 151.2093
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "australia"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ap-southeast-3",
+      "type": "region",
+      "code": "ap-southeast-3",
+      "display_name": "Asia Pacific (Jakarta)",
+      "parent_region_id": null,
+      "country_codes": [
+        "ID"
+      ],
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Indonesia",
+        "city": "Jakarta",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ap-southeast-3a",
+      "type": "az",
+      "code": "ap-southeast-3a",
+      "display_name": "Asia Pacific (Jakarta) AZ a",
+      "parent_region_id": "region:ap-southeast-3",
+      "country_codes": [
+        "ID"
+      ],
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ap-southeast-3b",
+      "type": "az",
+      "code": "ap-southeast-3b",
+      "display_name": "Asia Pacific (Jakarta) AZ b",
+      "parent_region_id": "region:ap-southeast-3",
+      "country_codes": [
+        "ID"
+      ],
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ap-southeast-3c",
+      "type": "az",
+      "code": "ap-southeast-3c",
+      "display_name": "Asia Pacific (Jakarta) AZ c",
+      "parent_region_id": "region:ap-southeast-3",
+      "country_codes": [
+        "ID"
+      ],
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ap-southeast-4",
+      "type": "region",
+      "code": "ap-southeast-4",
+      "display_name": "Asia Pacific (Melbourne)",
+      "parent_region_id": null,
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -37.8136,
+        "lon": 144.9631
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "australia"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Australia",
+        "city": "Melbourne",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ap-southeast-4a",
+      "type": "az",
+      "code": "ap-southeast-4a",
+      "display_name": "Asia Pacific (Melbourne) AZ a",
+      "parent_region_id": "region:ap-southeast-4",
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -37.8136,
+        "lon": 144.9631
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "australia"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ap-southeast-4b",
+      "type": "az",
+      "code": "ap-southeast-4b",
+      "display_name": "Asia Pacific (Melbourne) AZ b",
+      "parent_region_id": "region:ap-southeast-4",
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -37.8136,
+        "lon": 144.9631
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "australia"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ap-southeast-4c",
+      "type": "az",
+      "code": "ap-southeast-4c",
+      "display_name": "Asia Pacific (Melbourne) AZ c",
+      "parent_region_id": "region:ap-southeast-4",
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -37.8136,
+        "lon": 144.9631
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "australia"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ap-southeast-5",
+      "type": "region",
+      "code": "ap-southeast-5",
+      "display_name": "Asia Pacific (Malaysia)",
+      "parent_region_id": null,
+      "country_codes": [
+        "MY"
+      ],
+      "coordinates": {
+        "lat": 3.139,
+        "lon": 101.6869
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Malaysia",
+        "city": "Kuala Lumpur",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ap-southeast-5a",
+      "type": "az",
+      "code": "ap-southeast-5a",
+      "display_name": "Asia Pacific (Malaysia) AZ a",
+      "parent_region_id": "region:ap-southeast-5",
+      "country_codes": [
+        "MY"
+      ],
+      "coordinates": {
+        "lat": 3.139,
+        "lon": 101.6869
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ap-southeast-5b",
+      "type": "az",
+      "code": "ap-southeast-5b",
+      "display_name": "Asia Pacific (Malaysia) AZ b",
+      "parent_region_id": "region:ap-southeast-5",
+      "country_codes": [
+        "MY"
+      ],
+      "coordinates": {
+        "lat": 3.139,
+        "lon": 101.6869
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ap-southeast-5c",
+      "type": "az",
+      "code": "ap-southeast-5c",
+      "display_name": "Asia Pacific (Malaysia) AZ c",
+      "parent_region_id": "region:ap-southeast-5",
+      "country_codes": [
+        "MY"
+      ],
+      "coordinates": {
+        "lat": 3.139,
+        "lon": 101.6869
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ap-southeast-7",
+      "type": "region",
+      "code": "ap-southeast-7",
+      "display_name": "Asia Pacific (Thailand)",
+      "parent_region_id": null,
+      "country_codes": [
+        "TH"
+      ],
+      "coordinates": {
+        "lat": 13.7563,
+        "lon": 100.5018
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Thailand",
+        "city": "Bangkok",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ap-southeast-7a",
+      "type": "az",
+      "code": "ap-southeast-7a",
+      "display_name": "Asia Pacific (Thailand) AZ a",
+      "parent_region_id": "region:ap-southeast-7",
+      "country_codes": [
+        "TH"
+      ],
+      "coordinates": {
+        "lat": 13.7563,
+        "lon": 100.5018
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ap-southeast-7b",
+      "type": "az",
+      "code": "ap-southeast-7b",
+      "display_name": "Asia Pacific (Thailand) AZ b",
+      "parent_region_id": "region:ap-southeast-7",
+      "country_codes": [
+        "TH"
+      ],
+      "coordinates": {
+        "lat": 13.7563,
+        "lon": 100.5018
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ap-southeast-7c",
+      "type": "az",
+      "code": "ap-southeast-7c",
+      "display_name": "Asia Pacific (Thailand) AZ c",
+      "parent_region_id": "region:ap-southeast-7",
+      "country_codes": [
+        "TH"
+      ],
+      "coordinates": {
+        "lat": 13.7563,
+        "lon": 100.5018
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ap-northeast-1",
+      "type": "region",
+      "code": "ap-northeast-1",
+      "display_name": "Asia Pacific (Tokyo)",
+      "parent_region_id": null,
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 35.6762,
+        "lon": 139.6503
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "japan"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Japan",
+        "city": "Tokyo",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ap-northeast-1a",
+      "type": "az",
+      "code": "ap-northeast-1a",
+      "display_name": "Asia Pacific (Tokyo) AZ a",
+      "parent_region_id": "region:ap-northeast-1",
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 35.6762,
+        "lon": 139.6503
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "japan"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ap-northeast-1b",
+      "type": "az",
+      "code": "ap-northeast-1b",
+      "display_name": "Asia Pacific (Tokyo) AZ b",
+      "parent_region_id": "region:ap-northeast-1",
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 35.6762,
+        "lon": 139.6503
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "japan"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ap-northeast-1c",
+      "type": "az",
+      "code": "ap-northeast-1c",
+      "display_name": "Asia Pacific (Tokyo) AZ c",
+      "parent_region_id": "region:ap-northeast-1",
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 35.6762,
+        "lon": 139.6503
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "japan"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ap-northeast-2",
+      "type": "region",
+      "code": "ap-northeast-2",
+      "display_name": "Asia Pacific (Seoul)",
+      "parent_region_id": null,
+      "country_codes": [
+        "KR"
+      ],
+      "coordinates": {
+        "lat": 37.5665,
+        "lon": 126.978
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "korea"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "South Korea",
+        "city": "Seoul",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ap-northeast-2a",
+      "type": "az",
+      "code": "ap-northeast-2a",
+      "display_name": "Asia Pacific (Seoul) AZ a",
+      "parent_region_id": "region:ap-northeast-2",
+      "country_codes": [
+        "KR"
+      ],
+      "coordinates": {
+        "lat": 37.5665,
+        "lon": 126.978
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "korea"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ap-northeast-2b",
+      "type": "az",
+      "code": "ap-northeast-2b",
+      "display_name": "Asia Pacific (Seoul) AZ b",
+      "parent_region_id": "region:ap-northeast-2",
+      "country_codes": [
+        "KR"
+      ],
+      "coordinates": {
+        "lat": 37.5665,
+        "lon": 126.978
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "korea"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ap-northeast-2c",
+      "type": "az",
+      "code": "ap-northeast-2c",
+      "display_name": "Asia Pacific (Seoul) AZ c",
+      "parent_region_id": "region:ap-northeast-2",
+      "country_codes": [
+        "KR"
+      ],
+      "coordinates": {
+        "lat": 37.5665,
+        "lon": 126.978
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "korea"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ap-northeast-3",
+      "type": "region",
+      "code": "ap-northeast-3",
+      "display_name": "Asia Pacific (Osaka)",
+      "parent_region_id": null,
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 34.6937,
+        "lon": 135.5023
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "japan"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Japan",
+        "city": "Osaka",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ap-northeast-3a",
+      "type": "az",
+      "code": "ap-northeast-3a",
+      "display_name": "Asia Pacific (Osaka) AZ a",
+      "parent_region_id": "region:ap-northeast-3",
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 34.6937,
+        "lon": 135.5023
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "japan"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ap-northeast-3b",
+      "type": "az",
+      "code": "ap-northeast-3b",
+      "display_name": "Asia Pacific (Osaka) AZ b",
+      "parent_region_id": "region:ap-northeast-3",
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 34.6937,
+        "lon": 135.5023
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "japan"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ap-northeast-3c",
+      "type": "az",
+      "code": "ap-northeast-3c",
+      "display_name": "Asia Pacific (Osaka) AZ c",
+      "parent_region_id": "region:ap-northeast-3",
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 34.6937,
+        "lon": 135.5023
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [
+        "hipaa",
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "japan"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "region:ap-east-1",
+      "type": "region",
+      "code": "ap-east-1",
+      "display_name": "Asia Pacific (Hong Kong)",
+      "parent_region_id": null,
+      "country_codes": [
+        "HK"
+      ],
+      "coordinates": {
+        "lat": 22.3193,
+        "lon": 114.1694
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "full_region",
+        "multi_az"
+      ],
+      "metadata": {
+        "geography": "Hong Kong",
+        "city": "Hong Kong",
+        "az_count": 3
+      }
+    },
+    {
+      "id": "az:ap-east-1a",
+      "type": "az",
+      "code": "ap-east-1a",
+      "display_name": "Asia Pacific (Hong Kong) AZ a",
+      "parent_region_id": "region:ap-east-1",
+      "country_codes": [
+        "HK"
+      ],
+      "coordinates": {
+        "lat": 22.3193,
+        "lon": 114.1694
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "a"
+      }
+    },
+    {
+      "id": "az:ap-east-1b",
+      "type": "az",
+      "code": "ap-east-1b",
+      "display_name": "Asia Pacific (Hong Kong) AZ b",
+      "parent_region_id": "region:ap-east-1",
+      "country_codes": [
+        "HK"
+      ],
+      "coordinates": {
+        "lat": 22.3193,
+        "lon": 114.1694
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "b"
+      }
+    },
+    {
+      "id": "az:ap-east-1c",
+      "type": "az",
+      "code": "ap-east-1c",
+      "display_name": "Asia Pacific (Hong Kong) AZ c",
+      "parent_region_id": "region:ap-east-1",
+      "country_codes": [
+        "HK"
+      ],
+      "coordinates": {
+        "lat": 22.3193,
+        "lon": 114.1694
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [
+        "pci",
+        "soc",
+        "iso"
+      ],
+      "privacy_buckets": [
+        "apac"
+      ],
+      "capabilities": [
+        "availability_zone"
+      ],
+      "metadata": {
+        "synthetic": true,
+        "letter": "c"
+      }
+    },
+    {
+      "id": "local_zone:us-west-2-lax-1a",
+      "type": "local_zone",
+      "code": "us-west-2-lax-1a",
+      "display_name": "US West (Los Angeles)",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "us-west-2-lax-1",
+        "city": "Los Angeles",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:us-west-2-lax-1b",
+      "type": "local_zone",
+      "code": "us-west-2-lax-1b",
+      "display_name": "US West (Los Angeles)",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "us-west-2-lax-1",
+        "city": "Los Angeles",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:us-east-1-nyc-1a",
+      "type": "local_zone",
+      "code": "us-east-1-nyc-1a",
+      "display_name": "US East (New York City)",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "us-east-1-nyc-1",
+        "city": "New York",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:us-east-1-bos-1a",
+      "type": "local_zone",
+      "code": "us-east-1-bos-1a",
+      "display_name": "US East (Boston)",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 42.3601,
+        "lon": -71.0589
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "us-east-1-bos-1",
+        "city": "Boston",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:us-east-1-chi-1a",
+      "type": "local_zone",
+      "code": "us-east-1-chi-1a",
+      "display_name": "US East (Chicago)",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 41.8781,
+        "lon": -87.6298
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "us-east-1-chi-1",
+        "city": "Chicago",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:us-east-1-dfw-1a",
+      "type": "local_zone",
+      "code": "us-east-1-dfw-1a",
+      "display_name": "US East (Dallas)",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 32.7767,
+        "lon": -96.797
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "us-east-1-dfw-1",
+        "city": "Dallas",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:us-east-1-mia-1a",
+      "type": "local_zone",
+      "code": "us-east-1-mia-1a",
+      "display_name": "US East (Miami)",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 25.7617,
+        "lon": -80.1918
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "us-east-1-mia-1",
+        "city": "Miami",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:us-west-2-den-1a",
+      "type": "local_zone",
+      "code": "us-west-2-den-1a",
+      "display_name": "US West (Denver)",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.7392,
+        "lon": -104.9903
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "us-west-2-den-1",
+        "city": "Denver",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:us-west-2-phx-1a",
+      "type": "local_zone",
+      "code": "us-west-2-phx-1a",
+      "display_name": "US West (Phoenix)",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 33.4484,
+        "lon": -112.074
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "us-west-2-phx-1",
+        "city": "Phoenix",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:us-west-2-sea-1a",
+      "type": "local_zone",
+      "code": "us-west-2-sea-1a",
+      "display_name": "US West (Seattle)",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 47.6062,
+        "lon": -122.3321
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "us-west-2-sea-1",
+        "city": "Seattle",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:eu-central-1-waw-1a",
+      "type": "local_zone",
+      "code": "eu-central-1-waw-1a",
+      "display_name": "Europe (Warsaw)",
+      "parent_region_id": "region:eu-central-1",
+      "country_codes": [
+        "PL"
+      ],
+      "coordinates": {
+        "lat": 52.2297,
+        "lon": 21.0122
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "eu-central-1-waw-1",
+        "city": "Warsaw",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:eu-west-2-man-1a",
+      "type": "local_zone",
+      "code": "eu-west-2-man-1a",
+      "display_name": "Europe (Manchester)",
+      "parent_region_id": "region:eu-west-2",
+      "country_codes": [
+        "GB"
+      ],
+      "coordinates": {
+        "lat": 53.4808,
+        "lon": -2.2426
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "eu-west-2-man-1",
+        "city": "Manchester",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:ap-northeast-1-tky-1a",
+      "type": "local_zone",
+      "code": "ap-northeast-1-tky-1a",
+      "display_name": "Asia Pacific (Tokyo)",
+      "parent_region_id": "region:ap-northeast-1",
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 35.6762,
+        "lon": 139.6503
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "ap-northeast-1-tky-1",
+        "city": "Tokyo",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:ap-southeast-1-bkk-1a",
+      "type": "local_zone",
+      "code": "ap-southeast-1-bkk-1a",
+      "display_name": "Asia Pacific (Bangkok)",
+      "parent_region_id": "region:ap-southeast-1",
+      "country_codes": [
+        "TH"
+      ],
+      "coordinates": {
+        "lat": 13.7563,
+        "lon": 100.5018
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "ap-southeast-1-bkk-1",
+        "city": "Bangkok",
+        "carrier": null
+      }
+    },
+    {
+      "id": "local_zone:ap-south-1-ccu-1a",
+      "type": "local_zone",
+      "code": "ap-south-1-ccu-1a",
+      "display_name": "Asia Pacific (Kolkata)",
+      "parent_region_id": "region:ap-south-1",
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 22.5726,
+        "lon": 88.3639
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "local_zone_compute"
+      ],
+      "metadata": {
+        "group": "ap-south-1-ccu-1",
+        "city": "Kolkata",
+        "carrier": null
+      }
+    },
+    {
+      "id": "wavelength:us-east-1-wl1-bos-wlz-1",
+      "type": "wavelength",
+      "code": "us-east-1-wl1-bos-wlz-1",
+      "display_name": "Boston Wavelength",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 42.3601,
+        "lon": -71.0589
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "mec_5g"
+      ],
+      "metadata": {
+        "group": "us-east-1-wl1",
+        "city": "Boston",
+        "carrier": "Verizon"
+      }
+    },
+    {
+      "id": "wavelength:us-east-1-wl1-nyc-wlz-1",
+      "type": "wavelength",
+      "code": "us-east-1-wl1-nyc-wlz-1",
+      "display_name": "New York Wavelength",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "mec_5g"
+      ],
+      "metadata": {
+        "group": "us-east-1-wl1",
+        "city": "New York",
+        "carrier": "Verizon"
+      }
+    },
+    {
+      "id": "wavelength:us-east-1-wl1-atl-wlz-1",
+      "type": "wavelength",
+      "code": "us-east-1-wl1-atl-wlz-1",
+      "display_name": "Atlanta Wavelength",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 33.749,
+        "lon": -84.388
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "mec_5g"
+      ],
+      "metadata": {
+        "group": "us-east-1-wl1",
+        "city": "Atlanta",
+        "carrier": "Verizon"
+      }
+    },
+    {
+      "id": "wavelength:us-east-1-wl1-mia-wlz-1",
+      "type": "wavelength",
+      "code": "us-east-1-wl1-mia-wlz-1",
+      "display_name": "Miami Wavelength",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 25.7617,
+        "lon": -80.1918
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "mec_5g"
+      ],
+      "metadata": {
+        "group": "us-east-1-wl1",
+        "city": "Miami",
+        "carrier": "Verizon"
+      }
+    },
+    {
+      "id": "wavelength:us-east-1-wl1-dfw-wlz-1",
+      "type": "wavelength",
+      "code": "us-east-1-wl1-dfw-wlz-1",
+      "display_name": "Dallas Wavelength",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 32.7767,
+        "lon": -96.797
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "mec_5g"
+      ],
+      "metadata": {
+        "group": "us-east-1-wl1",
+        "city": "Dallas",
+        "carrier": "Verizon"
+      }
+    },
+    {
+      "id": "wavelength:us-east-1-wl1-was-wlz-1",
+      "type": "wavelength",
+      "code": "us-east-1-wl1-was-wlz-1",
+      "display_name": "Washington DC Wavelength",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 38.9072,
+        "lon": -77.0369
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "mec_5g"
+      ],
+      "metadata": {
+        "group": "us-east-1-wl1",
+        "city": "Washington",
+        "carrier": "Verizon"
+      }
+    },
+    {
+      "id": "wavelength:us-west-2-wl1-sea-wlz-1",
+      "type": "wavelength",
+      "code": "us-west-2-wl1-sea-wlz-1",
+      "display_name": "Seattle Wavelength",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 47.6062,
+        "lon": -122.3321
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "mec_5g"
+      ],
+      "metadata": {
+        "group": "us-west-2-wl1",
+        "city": "Seattle",
+        "carrier": "Verizon"
+      }
+    },
+    {
+      "id": "wavelength:us-west-2-wl1-sfo-wlz-1",
+      "type": "wavelength",
+      "code": "us-west-2-wl1-sfo-wlz-1",
+      "display_name": "San Francisco Wavelength",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 37.7749,
+        "lon": -122.4194
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "mec_5g"
+      ],
+      "metadata": {
+        "group": "us-west-2-wl1",
+        "city": "San Francisco",
+        "carrier": "Verizon"
+      }
+    },
+    {
+      "id": "wavelength:us-west-2-wl1-lax-wlz-1",
+      "type": "wavelength",
+      "code": "us-west-2-wl1-lax-wlz-1",
+      "display_name": "Los Angeles Wavelength",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "mec_5g"
+      ],
+      "metadata": {
+        "group": "us-west-2-wl1",
+        "city": "Los Angeles",
+        "carrier": "Verizon"
+      }
+    },
+    {
+      "id": "wavelength:us-west-2-wl1-phx-wlz-1",
+      "type": "wavelength",
+      "code": "us-west-2-wl1-phx-wlz-1",
+      "display_name": "Phoenix Wavelength",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 33.4484,
+        "lon": -112.074
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "mec_5g"
+      ],
+      "metadata": {
+        "group": "us-west-2-wl1",
+        "city": "Phoenix",
+        "carrier": "Verizon"
+      }
+    },
+    {
+      "id": "wavelength:eu-west-2-wl1-lon-wlz-1",
+      "type": "wavelength",
+      "code": "eu-west-2-wl1-lon-wlz-1",
+      "display_name": "London Wavelength",
+      "parent_region_id": "region:eu-west-2",
+      "country_codes": [
+        "GB"
+      ],
+      "coordinates": {
+        "lat": 51.5074,
+        "lon": -0.1278
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "mec_5g"
+      ],
+      "metadata": {
+        "group": "eu-west-2-wl1",
+        "city": "London",
+        "carrier": "Vodafone"
+      }
+    },
+    {
+      "id": "wavelength:ap-northeast-1-wl1-nrt-wlz-1",
+      "type": "wavelength",
+      "code": "ap-northeast-1-wl1-nrt-wlz-1",
+      "display_name": "Tokyo Wavelength",
+      "parent_region_id": "region:ap-northeast-1",
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 35.6762,
+        "lon": 139.6503
+      },
+      "opt_in_required": true,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "mec_5g"
+      ],
+      "metadata": {
+        "group": "ap-northeast-1-wl1",
+        "city": "Tokyo",
+        "carrier": "KDDI"
+      }
+    },
+    {
+      "id": "edge_pop:edge-ca-calgary",
+      "type": "edge_pop",
+      "code": "edge-ca-calgary",
+      "display_name": "Calgary Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "CA"
+      ],
+      "coordinates": {
+        "lat": 51.0447,
+        "lon": -114.0719
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Calgary",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-ca-montreal",
+      "type": "edge_pop",
+      "code": "edge-ca-montreal",
+      "display_name": "Montreal Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "CA"
+      ],
+      "coordinates": {
+        "lat": 45.5017,
+        "lon": -73.5673
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Montreal",
+        "pop_count": 3
+      }
+    },
+    {
+      "id": "edge_pop:edge-ca-toronto",
+      "type": "edge_pop",
+      "code": "edge-ca-toronto",
+      "display_name": "Toronto Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "CA"
+      ],
+      "coordinates": {
+        "lat": 43.6532,
+        "lon": -79.3832
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Toronto",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-ca-vancouver",
+      "type": "edge_pop",
+      "code": "edge-ca-vancouver",
+      "display_name": "Vancouver Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "CA"
+      ],
+      "coordinates": {
+        "lat": 49.2827,
+        "lon": -123.1207
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Vancouver",
+        "pop_count": 3
+      }
+    },
+    {
+      "id": "edge_pop:edge-mx-mexico-city",
+      "type": "edge_pop",
+      "code": "edge-mx-mexico-city",
+      "display_name": "Mexico City Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "MX"
+      ],
+      "coordinates": {
+        "lat": 19.4326,
+        "lon": -99.1332
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Mexico City",
+        "pop_count": 10
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-atlanta",
+      "type": "edge_pop",
+      "code": "edge-us-atlanta",
+      "display_name": "Atlanta Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 33.749,
+        "lon": -84.388
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Atlanta",
+        "pop_count": 29
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-boston",
+      "type": "edge_pop",
+      "code": "edge-us-boston",
+      "display_name": "Boston Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 42.3601,
+        "lon": -71.0589
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Boston",
+        "pop_count": 6
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-chicago",
+      "type": "edge_pop",
+      "code": "edge-us-chicago",
+      "display_name": "Chicago Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 41.8781,
+        "lon": -87.6298
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Chicago",
+        "pop_count": 32
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-columbus",
+      "type": "edge_pop",
+      "code": "edge-us-columbus",
+      "display_name": "Columbus Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.9612,
+        "lon": -82.9988
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Columbus",
+        "pop_count": 5
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-dallas",
+      "type": "edge_pop",
+      "code": "edge-us-dallas",
+      "display_name": "Dallas Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 32.7767,
+        "lon": -96.797
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Dallas",
+        "pop_count": 27
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-denver",
+      "type": "edge_pop",
+      "code": "edge-us-denver",
+      "display_name": "Denver Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.7392,
+        "lon": -104.9903
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Denver",
+        "pop_count": 7
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-houston",
+      "type": "edge_pop",
+      "code": "edge-us-houston",
+      "display_name": "Houston Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 29.7604,
+        "lon": -95.3698
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Houston",
+        "pop_count": 6
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-kansas-city",
+      "type": "edge_pop",
+      "code": "edge-us-kansas-city",
+      "display_name": "Kansas City Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.0997,
+        "lon": -94.5786
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Kansas City",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-los-angeles",
+      "type": "edge_pop",
+      "code": "edge-us-los-angeles",
+      "display_name": "Los Angeles Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Los Angeles",
+        "pop_count": 21
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-miami",
+      "type": "edge_pop",
+      "code": "edge-us-miami",
+      "display_name": "Miami Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 25.7617,
+        "lon": -80.1918
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Miami",
+        "pop_count": 19
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-minneapolis",
+      "type": "edge_pop",
+      "code": "edge-us-minneapolis",
+      "display_name": "Minneapolis Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 44.9778,
+        "lon": -93.265
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Minneapolis",
+        "pop_count": 5
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-nashville",
+      "type": "edge_pop",
+      "code": "edge-us-nashville",
+      "display_name": "Nashville Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 36.1627,
+        "lon": -86.7816
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Nashville",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-newark",
+      "type": "edge_pop",
+      "code": "edge-us-newark",
+      "display_name": "Newark Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 40.7357,
+        "lon": -74.1724
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Newark",
+        "pop_count": 1
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-new-york",
+      "type": "edge_pop",
+      "code": "edge-us-new-york",
+      "display_name": "New York Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "New York",
+        "pop_count": 26
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-philadelphia",
+      "type": "edge_pop",
+      "code": "edge-us-philadelphia",
+      "display_name": "Philadelphia Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.9526,
+        "lon": -75.1652
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Philadelphia",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-phoenix",
+      "type": "edge_pop",
+      "code": "edge-us-phoenix",
+      "display_name": "Phoenix Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 33.4484,
+        "lon": -112.074
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Phoenix",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-pittsburgh",
+      "type": "edge_pop",
+      "code": "edge-us-pittsburgh",
+      "display_name": "Pittsburgh Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 40.4406,
+        "lon": -79.9959
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Pittsburgh",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-portland",
+      "type": "edge_pop",
+      "code": "edge-us-portland",
+      "display_name": "Portland Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 45.5152,
+        "lon": -122.6784
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Portland",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-salt-lake-city",
+      "type": "edge_pop",
+      "code": "edge-us-salt-lake-city",
+      "display_name": "Salt Lake City Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 40.7608,
+        "lon": -111.891
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Salt Lake City",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-san-francisco",
+      "type": "edge_pop",
+      "code": "edge-us-san-francisco",
+      "display_name": "San Francisco Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 37.7749,
+        "lon": -122.4194
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "San Francisco",
+        "pop_count": 14
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-seattle",
+      "type": "edge_pop",
+      "code": "edge-us-seattle",
+      "display_name": "Seattle Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 47.6062,
+        "lon": -122.3321
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Seattle",
+        "pop_count": 12
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-tampa",
+      "type": "edge_pop",
+      "code": "edge-us-tampa",
+      "display_name": "Tampa Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 27.9506,
+        "lon": -82.4572
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Tampa",
+        "pop_count": 3
+      }
+    },
+    {
+      "id": "edge_pop:edge-us-washington",
+      "type": "edge_pop",
+      "code": "edge-us-washington",
+      "display_name": "Washington Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 38.9072,
+        "lon": -77.0369
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Washington",
+        "pop_count": 31
+      }
+    },
+    {
+      "id": "edge_pop:edge-ar-buenos-aires",
+      "type": "edge_pop",
+      "code": "edge-ar-buenos-aires",
+      "display_name": "Buenos Aires Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "AR"
+      ],
+      "coordinates": {
+        "lat": -34.6037,
+        "lon": -58.3816
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Buenos Aires",
+        "pop_count": 5
+      }
+    },
+    {
+      "id": "edge_pop:edge-br-fortaleza",
+      "type": "edge_pop",
+      "code": "edge-br-fortaleza",
+      "display_name": "Fortaleza Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "BR"
+      ],
+      "coordinates": {
+        "lat": -3.7172,
+        "lon": -38.5433
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Fortaleza",
+        "pop_count": 6
+      }
+    },
+    {
+      "id": "edge_pop:edge-br-sao-paulo",
+      "type": "edge_pop",
+      "code": "edge-br-sao-paulo",
+      "display_name": "São Paulo Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "BR"
+      ],
+      "coordinates": {
+        "lat": -23.5558,
+        "lon": -46.6396
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "São Paulo",
+        "pop_count": 16
+      }
+    },
+    {
+      "id": "edge_pop:edge-br-rio-de-janeiro",
+      "type": "edge_pop",
+      "code": "edge-br-rio-de-janeiro",
+      "display_name": "Rio de Janeiro Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "BR"
+      ],
+      "coordinates": {
+        "lat": -22.9068,
+        "lon": -43.1729
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Rio de Janeiro",
+        "pop_count": 6
+      }
+    },
+    {
+      "id": "edge_pop:edge-cl-santiago",
+      "type": "edge_pop",
+      "code": "edge-cl-santiago",
+      "display_name": "Santiago Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "CL"
+      ],
+      "coordinates": {
+        "lat": -33.4489,
+        "lon": -70.6693
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Santiago",
+        "pop_count": 5
+      }
+    },
+    {
+      "id": "edge_pop:edge-co-bogota",
+      "type": "edge_pop",
+      "code": "edge-co-bogota",
+      "display_name": "Bogotá Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "CO"
+      ],
+      "coordinates": {
+        "lat": 4.711,
+        "lon": -74.0721
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Bogotá",
+        "pop_count": 5
+      }
+    },
+    {
+      "id": "edge_pop:edge-pe-lima",
+      "type": "edge_pop",
+      "code": "edge-pe-lima",
+      "display_name": "Lima Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "PE"
+      ],
+      "coordinates": {
+        "lat": -12.0464,
+        "lon": -77.0428
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Lima",
+        "pop_count": 3
+      }
+    },
+    {
+      "id": "edge_pop:edge-at-vienna",
+      "type": "edge_pop",
+      "code": "edge-at-vienna",
+      "display_name": "Vienna Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "AT"
+      ],
+      "coordinates": {
+        "lat": 48.2082,
+        "lon": 16.3738
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Vienna",
+        "pop_count": 5
+      }
+    },
+    {
+      "id": "edge_pop:edge-be-brussels",
+      "type": "edge_pop",
+      "code": "edge-be-brussels",
+      "display_name": "Brussels Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "BE"
+      ],
+      "coordinates": {
+        "lat": 50.8503,
+        "lon": 4.3517
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Brussels",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-bg-sofia",
+      "type": "edge_pop",
+      "code": "edge-bg-sofia",
+      "display_name": "Sofia Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "BG"
+      ],
+      "coordinates": {
+        "lat": 42.6977,
+        "lon": 23.3219
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Sofia",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-hr-zagreb",
+      "type": "edge_pop",
+      "code": "edge-hr-zagreb",
+      "display_name": "Zagreb Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "HR"
+      ],
+      "coordinates": {
+        "lat": 45.815,
+        "lon": 15.9819
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Zagreb",
+        "pop_count": 1
+      }
+    },
+    {
+      "id": "edge_pop:edge-cz-prague",
+      "type": "edge_pop",
+      "code": "edge-cz-prague",
+      "display_name": "Prague Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "CZ"
+      ],
+      "coordinates": {
+        "lat": 50.0755,
+        "lon": 14.4378
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Prague",
+        "pop_count": 1
+      }
+    },
+    {
+      "id": "edge_pop:edge-dk-copenhagen",
+      "type": "edge_pop",
+      "code": "edge-dk-copenhagen",
+      "display_name": "Copenhagen Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "DK"
+      ],
+      "coordinates": {
+        "lat": 55.6761,
+        "lon": 12.5683
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Copenhagen",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-fi-helsinki",
+      "type": "edge_pop",
+      "code": "edge-fi-helsinki",
+      "display_name": "Helsinki Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "FI"
+      ],
+      "coordinates": {
+        "lat": 60.1699,
+        "lon": 24.9384
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Helsinki",
+        "pop_count": 7
+      }
+    },
+    {
+      "id": "edge_pop:edge-fr-marseille",
+      "type": "edge_pop",
+      "code": "edge-fr-marseille",
+      "display_name": "Marseille Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "FR"
+      ],
+      "coordinates": {
+        "lat": 43.2965,
+        "lon": 5.3698
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Marseille",
+        "pop_count": 9
+      }
+    },
+    {
+      "id": "edge_pop:edge-fr-paris",
+      "type": "edge_pop",
+      "code": "edge-fr-paris",
+      "display_name": "Paris Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "FR"
+      ],
+      "coordinates": {
+        "lat": 48.8566,
+        "lon": 2.3522
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Paris",
+        "pop_count": 15
+      }
+    },
+    {
+      "id": "edge_pop:edge-de-berlin",
+      "type": "edge_pop",
+      "code": "edge-de-berlin",
+      "display_name": "Berlin Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "DE"
+      ],
+      "coordinates": {
+        "lat": 52.52,
+        "lon": 13.405
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Berlin",
+        "pop_count": 8
+      }
+    },
+    {
+      "id": "edge_pop:edge-de-düsseldorf",
+      "type": "edge_pop",
+      "code": "edge-de-düsseldorf",
+      "display_name": "Düsseldorf Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "DE"
+      ],
+      "coordinates": {
+        "lat": 51.2277,
+        "lon": 6.7735
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Düsseldorf",
+        "pop_count": 6
+      }
+    },
+    {
+      "id": "edge_pop:edge-de-frankfurt",
+      "type": "edge_pop",
+      "code": "edge-de-frankfurt",
+      "display_name": "Frankfurt Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "DE"
+      ],
+      "coordinates": {
+        "lat": 50.1109,
+        "lon": 8.6821
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Frankfurt",
+        "pop_count": 33
+      }
+    },
+    {
+      "id": "edge_pop:edge-de-hamburg",
+      "type": "edge_pop",
+      "code": "edge-de-hamburg",
+      "display_name": "Hamburg Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "DE"
+      ],
+      "coordinates": {
+        "lat": 53.5511,
+        "lon": 9.9937
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Hamburg",
+        "pop_count": 6
+      }
+    },
+    {
+      "id": "edge_pop:edge-de-munich",
+      "type": "edge_pop",
+      "code": "edge-de-munich",
+      "display_name": "Munich Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "DE"
+      ],
+      "coordinates": {
+        "lat": 48.1351,
+        "lon": 11.582
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Munich",
+        "pop_count": 6
+      }
+    },
+    {
+      "id": "edge_pop:edge-gr-athens",
+      "type": "edge_pop",
+      "code": "edge-gr-athens",
+      "display_name": "Athens Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "GR"
+      ],
+      "coordinates": {
+        "lat": 37.9838,
+        "lon": 23.7275
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Athens",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-hu-budapest",
+      "type": "edge_pop",
+      "code": "edge-hu-budapest",
+      "display_name": "Budapest Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "HU"
+      ],
+      "coordinates": {
+        "lat": 47.4979,
+        "lon": 19.0402
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Budapest",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-ie-dublin",
+      "type": "edge_pop",
+      "code": "edge-ie-dublin",
+      "display_name": "Dublin Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "IE"
+      ],
+      "coordinates": {
+        "lat": 53.3498,
+        "lon": -6.2603
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Dublin",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-it-milan",
+      "type": "edge_pop",
+      "code": "edge-it-milan",
+      "display_name": "Milan Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "IT"
+      ],
+      "coordinates": {
+        "lat": 45.4642,
+        "lon": 9.19
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Milan",
+        "pop_count": 12
+      }
+    },
+    {
+      "id": "edge_pop:edge-it-rome",
+      "type": "edge_pop",
+      "code": "edge-it-rome",
+      "display_name": "Rome Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "IT"
+      ],
+      "coordinates": {
+        "lat": 41.9028,
+        "lon": 12.4964
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Rome",
+        "pop_count": 7
+      }
+    },
+    {
+      "id": "edge_pop:edge-nl-amsterdam",
+      "type": "edge_pop",
+      "code": "edge-nl-amsterdam",
+      "display_name": "Amsterdam Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "NL"
+      ],
+      "coordinates": {
+        "lat": 52.3676,
+        "lon": 4.9041
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Amsterdam",
+        "pop_count": 11
+      }
+    },
+    {
+      "id": "edge_pop:edge-no-oslo",
+      "type": "edge_pop",
+      "code": "edge-no-oslo",
+      "display_name": "Oslo Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "NO"
+      ],
+      "coordinates": {
+        "lat": 59.9139,
+        "lon": 10.7522
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Oslo",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-pl-warsaw",
+      "type": "edge_pop",
+      "code": "edge-pl-warsaw",
+      "display_name": "Warsaw Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "PL"
+      ],
+      "coordinates": {
+        "lat": 52.2297,
+        "lon": 21.0122
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Warsaw",
+        "pop_count": 6
+      }
+    },
+    {
+      "id": "edge_pop:edge-pt-lisbon",
+      "type": "edge_pop",
+      "code": "edge-pt-lisbon",
+      "display_name": "Lisbon Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "PT"
+      ],
+      "coordinates": {
+        "lat": 38.7223,
+        "lon": -9.1393
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Lisbon",
+        "pop_count": 1
+      }
+    },
+    {
+      "id": "edge_pop:edge-ro-bucharest",
+      "type": "edge_pop",
+      "code": "edge-ro-bucharest",
+      "display_name": "Bucharest Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "RO"
+      ],
+      "coordinates": {
+        "lat": 44.4268,
+        "lon": 26.1025
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Bucharest",
+        "pop_count": 3
+      }
+    },
+    {
+      "id": "edge_pop:edge-es-barcelona",
+      "type": "edge_pop",
+      "code": "edge-es-barcelona",
+      "display_name": "Barcelona Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "ES"
+      ],
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Barcelona",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-es-madrid",
+      "type": "edge_pop",
+      "code": "edge-es-madrid",
+      "display_name": "Madrid Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "ES"
+      ],
+      "coordinates": {
+        "lat": 40.4168,
+        "lon": -3.7038
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Madrid",
+        "pop_count": 13
+      }
+    },
+    {
+      "id": "edge_pop:edge-se-stockholm",
+      "type": "edge_pop",
+      "code": "edge-se-stockholm",
+      "display_name": "Stockholm Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "SE"
+      ],
+      "coordinates": {
+        "lat": 59.3293,
+        "lon": 18.0686
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Stockholm",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-ch-zurich",
+      "type": "edge_pop",
+      "code": "edge-ch-zurich",
+      "display_name": "Zurich Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "CH"
+      ],
+      "coordinates": {
+        "lat": 47.3769,
+        "lon": 8.5417
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Zurich",
+        "pop_count": 3
+      }
+    },
+    {
+      "id": "edge_pop:edge-gb-london",
+      "type": "edge_pop",
+      "code": "edge-gb-london",
+      "display_name": "London Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "GB"
+      ],
+      "coordinates": {
+        "lat": 51.5074,
+        "lon": -0.1278
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "London",
+        "pop_count": 32
+      }
+    },
+    {
+      "id": "edge_pop:edge-gb-manchester",
+      "type": "edge_pop",
+      "code": "edge-gb-manchester",
+      "display_name": "Manchester Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "GB"
+      ],
+      "coordinates": {
+        "lat": 53.4808,
+        "lon": -2.2426
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Manchester",
+        "pop_count": 6
+      }
+    },
+    {
+      "id": "edge_pop:edge-bh-manama",
+      "type": "edge_pop",
+      "code": "edge-bh-manama",
+      "display_name": "Manama Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "BH"
+      ],
+      "coordinates": {
+        "lat": 26.2235,
+        "lon": 50.5876
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Manama",
+        "pop_count": 5
+      }
+    },
+    {
+      "id": "edge_pop:edge-il-tel-aviv",
+      "type": "edge_pop",
+      "code": "edge-il-tel-aviv",
+      "display_name": "Tel Aviv Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "IL"
+      ],
+      "coordinates": {
+        "lat": 32.0853,
+        "lon": 34.7818
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Tel Aviv",
+        "pop_count": 3
+      }
+    },
+    {
+      "id": "edge_pop:edge-sa-jeddah",
+      "type": "edge_pop",
+      "code": "edge-sa-jeddah",
+      "display_name": "Jeddah Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "SA"
+      ],
+      "coordinates": {
+        "lat": 21.4858,
+        "lon": 39.1925
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Jeddah",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-sa-riyadh",
+      "type": "edge_pop",
+      "code": "edge-sa-riyadh",
+      "display_name": "Riyadh Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "SA"
+      ],
+      "coordinates": {
+        "lat": 24.7136,
+        "lon": 46.6753
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Riyadh",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-om-muscat",
+      "type": "edge_pop",
+      "code": "edge-om-muscat",
+      "display_name": "Muscat Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "OM"
+      ],
+      "coordinates": {
+        "lat": 23.588,
+        "lon": 58.3829
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Muscat",
+        "pop_count": 3
+      }
+    },
+    {
+      "id": "edge_pop:edge-qa-doha",
+      "type": "edge_pop",
+      "code": "edge-qa-doha",
+      "display_name": "Doha Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "QA"
+      ],
+      "coordinates": {
+        "lat": 25.2854,
+        "lon": 51.531
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Doha",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-tr-istanbul",
+      "type": "edge_pop",
+      "code": "edge-tr-istanbul",
+      "display_name": "Istanbul Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "TR"
+      ],
+      "coordinates": {
+        "lat": 41.0082,
+        "lon": 28.9784
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Istanbul",
+        "pop_count": 6
+      }
+    },
+    {
+      "id": "edge_pop:edge-ae-dubai",
+      "type": "edge_pop",
+      "code": "edge-ae-dubai",
+      "display_name": "Dubai Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "AE"
+      ],
+      "coordinates": {
+        "lat": 25.2048,
+        "lon": 55.2708
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Dubai",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-eg-cairo",
+      "type": "edge_pop",
+      "code": "edge-eg-cairo",
+      "display_name": "Cairo Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "EG"
+      ],
+      "coordinates": {
+        "lat": 30.0444,
+        "lon": 31.2357
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Cairo",
+        "pop_count": 3
+      }
+    },
+    {
+      "id": "edge_pop:edge-ke-nairobi",
+      "type": "edge_pop",
+      "code": "edge-ke-nairobi",
+      "display_name": "Nairobi Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "KE"
+      ],
+      "coordinates": {
+        "lat": -1.2921,
+        "lon": 36.8219
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Nairobi",
+        "pop_count": 3
+      }
+    },
+    {
+      "id": "edge_pop:edge-ng-lagos",
+      "type": "edge_pop",
+      "code": "edge-ng-lagos",
+      "display_name": "Lagos Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "NG"
+      ],
+      "coordinates": {
+        "lat": 6.5244,
+        "lon": 3.3792
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Lagos",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-za-cape-town",
+      "type": "edge_pop",
+      "code": "edge-za-cape-town",
+      "display_name": "Cape Town Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "ZA"
+      ],
+      "coordinates": {
+        "lat": -33.9249,
+        "lon": 18.4241
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Cape Town",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-za-johannesburg",
+      "type": "edge_pop",
+      "code": "edge-za-johannesburg",
+      "display_name": "Johannesburg Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "ZA"
+      ],
+      "coordinates": {
+        "lat": -26.2041,
+        "lon": 28.0473
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Johannesburg",
+        "pop_count": 3
+      }
+    },
+    {
+      "id": "edge_pop:edge-au-brisbane",
+      "type": "edge_pop",
+      "code": "edge-au-brisbane",
+      "display_name": "Brisbane Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -27.4698,
+        "lon": 153.0251
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Brisbane",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-au-melbourne",
+      "type": "edge_pop",
+      "code": "edge-au-melbourne",
+      "display_name": "Melbourne Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -37.8136,
+        "lon": 144.9631
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Melbourne",
+        "pop_count": 2
+      }
+    },
+    {
+      "id": "edge_pop:edge-au-perth",
+      "type": "edge_pop",
+      "code": "edge-au-perth",
+      "display_name": "Perth Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -31.9505,
+        "lon": 115.8605
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Perth",
+        "pop_count": 1
+      }
+    },
+    {
+      "id": "edge_pop:edge-au-sydney",
+      "type": "edge_pop",
+      "code": "edge-au-sydney",
+      "display_name": "Sydney Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -33.8688,
+        "lon": 151.2093
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Sydney",
+        "pop_count": 5
+      }
+    },
+    {
+      "id": "edge_pop:edge-hk-hong-kong",
+      "type": "edge_pop",
+      "code": "edge-hk-hong-kong",
+      "display_name": "Hong Kong Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "HK"
+      ],
+      "coordinates": {
+        "lat": 22.3193,
+        "lon": 114.1694
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Hong Kong",
+        "pop_count": 5
+      }
+    },
+    {
+      "id": "edge_pop:edge-in-bengaluru",
+      "type": "edge_pop",
+      "code": "edge-in-bengaluru",
+      "display_name": "Bengaluru Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 12.9716,
+        "lon": 77.5946
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Bengaluru",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-in-chennai",
+      "type": "edge_pop",
+      "code": "edge-in-chennai",
+      "display_name": "Chennai Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 13.0827,
+        "lon": 80.2707
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Chennai",
+        "pop_count": 5
+      }
+    },
+    {
+      "id": "edge_pop:edge-in-kolkata",
+      "type": "edge_pop",
+      "code": "edge-in-kolkata",
+      "display_name": "Kolkata Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 22.5726,
+        "lon": 88.3639
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Kolkata",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-in-pune",
+      "type": "edge_pop",
+      "code": "edge-in-pune",
+      "display_name": "Pune Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 18.5204,
+        "lon": 73.8567
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Pune",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-in-mumbai",
+      "type": "edge_pop",
+      "code": "edge-in-mumbai",
+      "display_name": "Mumbai Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 19.076,
+        "lon": 72.8777
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Mumbai",
+        "pop_count": 13
+      }
+    },
+    {
+      "id": "edge_pop:edge-in-new-delhi",
+      "type": "edge_pop",
+      "code": "edge-in-new-delhi",
+      "display_name": "New Delhi Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 28.6139,
+        "lon": 77.209
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "New Delhi",
+        "pop_count": 13
+      }
+    },
+    {
+      "id": "edge_pop:edge-in-hyderabad",
+      "type": "edge_pop",
+      "code": "edge-in-hyderabad",
+      "display_name": "Hyderabad Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 17.385,
+        "lon": 78.4867
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Hyderabad",
+        "pop_count": 6
+      }
+    },
+    {
+      "id": "edge_pop:edge-id-jakarta",
+      "type": "edge_pop",
+      "code": "edge-id-jakarta",
+      "display_name": "Jakarta Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "ID"
+      ],
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Jakarta",
+        "pop_count": 8
+      }
+    },
+    {
+      "id": "edge_pop:edge-jp-tokyo",
+      "type": "edge_pop",
+      "code": "edge-jp-tokyo",
+      "display_name": "Tokyo Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 35.6762,
+        "lon": 139.6503
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Tokyo",
+        "pop_count": 27
+      }
+    },
+    {
+      "id": "edge_pop:edge-jp-osaka",
+      "type": "edge_pop",
+      "code": "edge-jp-osaka",
+      "display_name": "Osaka Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 34.6937,
+        "lon": 135.5023
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Osaka",
+        "pop_count": 9
+      }
+    },
+    {
+      "id": "edge_pop:edge-my-kuala-lumpur",
+      "type": "edge_pop",
+      "code": "edge-my-kuala-lumpur",
+      "display_name": "Kuala Lumpur Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "MY"
+      ],
+      "coordinates": {
+        "lat": 3.139,
+        "lon": 101.6869
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Kuala Lumpur",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-nz-auckland",
+      "type": "edge_pop",
+      "code": "edge-nz-auckland",
+      "display_name": "Auckland Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "NZ"
+      ],
+      "coordinates": {
+        "lat": -36.8509,
+        "lon": 174.7645
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Auckland",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-ph-manila",
+      "type": "edge_pop",
+      "code": "edge-ph-manila",
+      "display_name": "Manila Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "PH"
+      ],
+      "coordinates": {
+        "lat": 14.5995,
+        "lon": 120.9842
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Manila",
+        "pop_count": 5
+      }
+    },
+    {
+      "id": "edge_pop:edge-sg-singapore",
+      "type": "edge_pop",
+      "code": "edge-sg-singapore",
+      "display_name": "Singapore Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "SG"
+      ],
+      "coordinates": {
+        "lat": 1.3521,
+        "lon": 103.8198
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Singapore",
+        "pop_count": 12
+      }
+    },
+    {
+      "id": "edge_pop:edge-kr-seoul",
+      "type": "edge_pop",
+      "code": "edge-kr-seoul",
+      "display_name": "Seoul Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "KR"
+      ],
+      "coordinates": {
+        "lat": 37.5665,
+        "lon": 126.978
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Seoul",
+        "pop_count": 10
+      }
+    },
+    {
+      "id": "edge_pop:edge-tw-taipei",
+      "type": "edge_pop",
+      "code": "edge-tw-taipei",
+      "display_name": "Taipei Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "TW"
+      ],
+      "coordinates": {
+        "lat": 25.033,
+        "lon": 121.5654
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Taipei",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-th-bangkok",
+      "type": "edge_pop",
+      "code": "edge-th-bangkok",
+      "display_name": "Bangkok Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "TH"
+      ],
+      "coordinates": {
+        "lat": 13.7563,
+        "lon": 100.5018
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Bangkok",
+        "pop_count": 5
+      }
+    },
+    {
+      "id": "edge_pop:edge-vn-hanoi",
+      "type": "edge_pop",
+      "code": "edge-vn-hanoi",
+      "display_name": "Hanoi Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "VN"
+      ],
+      "coordinates": {
+        "lat": 21.0278,
+        "lon": 105.8342
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Hanoi",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "edge_pop:edge-vn-ho-chi-minh-city",
+      "type": "edge_pop",
+      "code": "edge-vn-ho-chi-minh-city",
+      "display_name": "Ho Chi Minh City Edge PoP",
+      "parent_region_id": null,
+      "country_codes": [
+        "VN"
+      ],
+      "coordinates": {
+        "lat": 10.8231,
+        "lon": 106.6297
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "edge_cdn",
+        "edge_dns",
+        "edge_waf",
+        "lambda_at_edge",
+        "cloudfront_functions"
+      ],
+      "metadata": {
+        "city": "Ho Chi Minh City",
+        "pop_count": 4
+      }
+    },
+    {
+      "id": "regional_edge_cache:rec-us-east-1",
+      "type": "regional_edge_cache",
+      "code": "rec-us-east-1",
+      "display_name": "N. Virginia Regional Edge Cache",
+      "parent_region_id": "region:us-east-1",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 39.0438,
+        "lon": -77.4874
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "regional_edge_cache"
+      ],
+      "metadata": {
+        "city": "Ashburn"
+      }
+    },
+    {
+      "id": "regional_edge_cache:rec-us-west-2",
+      "type": "regional_edge_cache",
+      "code": "rec-us-west-2",
+      "display_name": "Oregon Regional Edge Cache",
+      "parent_region_id": "region:us-west-2",
+      "country_codes": [
+        "US"
+      ],
+      "coordinates": {
+        "lat": 45.8399,
+        "lon": -119.7006
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "regional_edge_cache"
+      ],
+      "metadata": {
+        "city": "Boardman"
+      }
+    },
+    {
+      "id": "regional_edge_cache:rec-eu-west-1",
+      "type": "regional_edge_cache",
+      "code": "rec-eu-west-1",
+      "display_name": "Ireland Regional Edge Cache",
+      "parent_region_id": "region:eu-west-1",
+      "country_codes": [
+        "IE"
+      ],
+      "coordinates": {
+        "lat": 53.3498,
+        "lon": -6.2603
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "regional_edge_cache"
+      ],
+      "metadata": {
+        "city": "Dublin"
+      }
+    },
+    {
+      "id": "regional_edge_cache:rec-eu-central-1",
+      "type": "regional_edge_cache",
+      "code": "rec-eu-central-1",
+      "display_name": "Frankfurt Regional Edge Cache",
+      "parent_region_id": "region:eu-central-1",
+      "country_codes": [
+        "DE"
+      ],
+      "coordinates": {
+        "lat": 50.1109,
+        "lon": 8.6821
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "regional_edge_cache"
+      ],
+      "metadata": {
+        "city": "Frankfurt"
+      }
+    },
+    {
+      "id": "regional_edge_cache:rec-ap-northeast-1",
+      "type": "regional_edge_cache",
+      "code": "rec-ap-northeast-1",
+      "display_name": "Tokyo Regional Edge Cache",
+      "parent_region_id": "region:ap-northeast-1",
+      "country_codes": [
+        "JP"
+      ],
+      "coordinates": {
+        "lat": 35.6762,
+        "lon": 139.6503
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "regional_edge_cache"
+      ],
+      "metadata": {
+        "city": "Tokyo"
+      }
+    },
+    {
+      "id": "regional_edge_cache:rec-ap-southeast-1",
+      "type": "regional_edge_cache",
+      "code": "rec-ap-southeast-1",
+      "display_name": "Singapore Regional Edge Cache",
+      "parent_region_id": "region:ap-southeast-1",
+      "country_codes": [
+        "SG"
+      ],
+      "coordinates": {
+        "lat": 1.3521,
+        "lon": 103.8198
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "regional_edge_cache"
+      ],
+      "metadata": {
+        "city": "Singapore"
+      }
+    },
+    {
+      "id": "regional_edge_cache:rec-ap-southeast-2",
+      "type": "regional_edge_cache",
+      "code": "rec-ap-southeast-2",
+      "display_name": "Sydney Regional Edge Cache",
+      "parent_region_id": "region:ap-southeast-2",
+      "country_codes": [
+        "AU"
+      ],
+      "coordinates": {
+        "lat": -33.8688,
+        "lon": 151.2093
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "regional_edge_cache"
+      ],
+      "metadata": {
+        "city": "Sydney"
+      }
+    },
+    {
+      "id": "regional_edge_cache:rec-ap-south-1",
+      "type": "regional_edge_cache",
+      "code": "rec-ap-south-1",
+      "display_name": "Mumbai Regional Edge Cache",
+      "parent_region_id": "region:ap-south-1",
+      "country_codes": [
+        "IN"
+      ],
+      "coordinates": {
+        "lat": 19.076,
+        "lon": 72.8777
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "regional_edge_cache"
+      ],
+      "metadata": {
+        "city": "Mumbai"
+      }
+    },
+    {
+      "id": "regional_edge_cache:rec-sa-east-1",
+      "type": "regional_edge_cache",
+      "code": "rec-sa-east-1",
+      "display_name": "São Paulo Regional Edge Cache",
+      "parent_region_id": "region:sa-east-1",
+      "country_codes": [
+        "BR"
+      ],
+      "coordinates": {
+        "lat": -23.5558,
+        "lon": -46.6396
+      },
+      "opt_in_required": false,
+      "partition": "aws",
+      "compliance_tags": [],
+      "privacy_buckets": [],
+      "capabilities": [
+        "regional_edge_cache"
+      ],
+      "metadata": {
+        "city": "São Paulo"
+      }
+    }
+  ]
+}

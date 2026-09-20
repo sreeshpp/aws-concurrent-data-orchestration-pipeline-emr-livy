@@ -1,0 +1,158 @@
+[
+  {
+    "code": "us-east-1-wl1-bos-wlz-1",
+    "group": "us-east-1-wl1",
+    "carrier": "Verizon",
+    "name": "Boston Wavelength",
+    "parent_region": "us-east-1",
+    "city": "Boston",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 42.3601,
+    "lon": -71.0589
+  },
+  {
+    "code": "us-east-1-wl1-nyc-wlz-1",
+    "group": "us-east-1-wl1",
+    "carrier": "Verizon",
+    "name": "New York Wavelength",
+    "parent_region": "us-east-1",
+    "city": "New York",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 40.7128,
+    "lon": -74.006
+  },
+  {
+    "code": "us-east-1-wl1-atl-wlz-1",
+    "group": "us-east-1-wl1",
+    "carrier": "Verizon",
+    "name": "Atlanta Wavelength",
+    "parent_region": "us-east-1",
+    "city": "Atlanta",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 33.749,
+    "lon": -84.388
+  },
+  {
+    "code": "us-east-1-wl1-mia-wlz-1",
+    "group": "us-east-1-wl1",
+    "carrier": "Verizon",
+    "name": "Miami Wavelength",
+    "parent_region": "us-east-1",
+    "city": "Miami",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 25.7617,
+    "lon": -80.1918
+  },
+  {
+    "code": "us-east-1-wl1-dfw-wlz-1",
+    "group": "us-east-1-wl1",
+    "carrier": "Verizon",
+    "name": "Dallas Wavelength",
+    "parent_region": "us-east-1",
+    "city": "Dallas",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 32.7767,
+    "lon": -96.797
+  },
+  {
+    "code": "us-east-1-wl1-was-wlz-1",
+    "group": "us-east-1-wl1",
+    "carrier": "Verizon",
+    "name": "Washington DC Wavelength",
+    "parent_region": "us-east-1",
+    "city": "Washington",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 38.9072,
+    "lon": -77.0369
+  },
+  {
+    "code": "us-west-2-wl1-sea-wlz-1",
+    "group": "us-west-2-wl1",
+    "carrier": "Verizon",
+    "name": "Seattle Wavelength",
+    "parent_region": "us-west-2",
+    "city": "Seattle",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 47.6062,
+    "lon": -122.3321
+  },
+  {
+    "code": "us-west-2-wl1-sfo-wlz-1",
+    "group": "us-west-2-wl1",
+    "carrier": "Verizon",
+    "name": "San Francisco Wavelength",
+    "parent_region": "us-west-2",
+    "city": "San Francisco",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 37.7749,
+    "lon": -122.4194
+  },
+  {
+    "code": "us-west-2-wl1-lax-wlz-1",
+    "group": "us-west-2-wl1",
+    "carrier": "Verizon",
+    "name": "Los Angeles Wavelength",
+    "parent_region": "us-west-2",
+    "city": "Los Angeles",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 34.0522,
+    "lon": -118.2437
+  },
+  {
+    "code": "us-west-2-wl1-phx-wlz-1",
+    "group": "us-west-2-wl1",
+    "carrier": "Verizon",
+    "name": "Phoenix Wavelength",
+    "parent_region": "us-west-2",
+    "city": "Phoenix",
+    "country_codes": [
+      "US"
+    ],
+    "lat": 33.4484,
+    "lon": -112.074
+  },
+  {
+    "code": "eu-west-2-wl1-lon-wlz-1",
+    "group": "eu-west-2-wl1",
+    "carrier": "Vodafone",
+    "name": "London Wavelength",
+    "parent_region": "eu-west-2",
+    "city": "London",
+    "country_codes": [
+      "GB"
+    ],
+    "lat": 51.5074,
+    "lon": -0.1278
+  },
+  {
+    "code": "ap-northeast-1-wl1-nrt-wlz-1",
+    "group": "ap-northeast-1-wl1",
+    "carrier": "KDDI",
+    "name": "Tokyo Wavelength",
+    "parent_region": "ap-northeast-1",
+    "city": "Tokyo",
+    "country_codes": [
+      "JP"
+    ],
+    "lat": 35.6762,
+    "lon": 139.6503
+  }
+]
