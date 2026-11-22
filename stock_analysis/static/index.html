@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fact Desk</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="mast">
+    <div class="mast-inner">
+      <div class="brand">
+        <span class="mark" aria-hidden="true">Fd</span>
+        <div>
+          <p class="brand-name">Fact Desk</p>
+          <p class="brand-tag">Buying versus selling pressure</p>
+        </div>
+      </div>
+      <p class="mast-note">No market-data feed is connected. A missing figure stays unavailable. Nothing on this page is a recommendation to buy or sell.</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <form id="desk-form" class="panel" novalidate>
+      <div class="panel-head">
+        <h1>New note</h1>
+        <p>Name the listing and how you want the evidence weighted. The desk does not look up a price.</p>
+      </div>
+
+      <label class="field">
+        <span>Ticker</span>
+        <input id="ticker" name="ticker" type="text" maxlength="20" autocapitalize="characters" autocomplete="off" spellcheck="false" placeholder="AAPL or RELIANCE" required>
+      </label>
+
+      <label class="field">
+        <span>Exchange</span>
+        <select id="exchange" name="exchange" required>
+          <option value="">Select a venue</option>
+          <optgroup label="United States">
+            <option>NYSE</option>
+            <option>NASDAQ</option>
+            <option>NYSE American</option>
+            <option>NYSE Arca</option>
+            <option>Cboe</option>
+          </optgroup>
+          <optgroup label="India">
+            <option>NSE</option>
+            <option>BSE</option>
+          </optgroup>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>Horizon</span>
+        <select id="horizon" name="horizon" required>
+          <option value="">Select a horizon</option>
+          <option value="swing">Short-term swing (1–4 weeks)</option>
+          <option value="medium">Medium-term (3–12 months)</option>
+          <option value="long">Long-term (1–5+ years)</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>Risk tolerance</span>
+        <select id="risk_tolerance" name="risk_tolerance" required>
+          <option value="">Select a tolerance</option>
+          <option value="conservative">Conservative</option>
+          <option value="moderate">Moderate</option>
+          <option value="aggressive">Aggressive</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>Last price <em>optional</em></span>
+        <input id="last_price" name="last_price" type="text" inputmode="decimal" autocomplete="off" placeholder="Leave blank if you do not have a print" spellcheck="false">
+        <small id="price-hint">If you type one, it is labeled user input. It is not treated as a quote.</small>
+      </label>
+
+      <div class="actions">
+        <button type="submit" class="primary">Build the note</button>
+        <button type="reset" class="ghost">Clear</button>
+      </div>
+      <p id="form-error" class="form-error" role="alert" hidden></p>
+    </form>
+
+    <section id="report" class="sheet" aria-live="polite">
+      <div id="empty" class="empty">
+        <p class="kicker">Five pillars</p>
+        <h2>A note stays blank until a source fills it.</h2>
+        <p class="lede">This desk renders the equity framework and marks every feed-backed figure as data not connected. It does not call a model and it does not invent a price, a flow, or an earnings date.</p>
+        <ol class="pillar-index">
+          <li><strong>Fundamental health.</strong> Revenue, profitability, leverage, valuation, and catalysts.</li>
+          <li><strong>Price trend and volume.</strong> Trend, support, and resistance only when bars were supplied.</li>
+          <li><strong>Buying versus selling pressure.</strong> 13F, Form 4, and short interest in the US. Shareholding, FII/DII, bulk and block deals, and exchange short or SLB in India.</li>
+          <li><strong>Alignment.</strong> Confirmation or divergence only when both a trend and a flow series exist.</li>
+          <li><strong>Summary.</strong> Bullish factors, bearish risks, and what to watch. Each bullet cites a fact or says it is missing.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
