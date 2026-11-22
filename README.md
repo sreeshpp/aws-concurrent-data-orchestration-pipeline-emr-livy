@@ -100,3 +100,18 @@ Open the URL shown in the terminal (default `http://localhost:8501`).
 - "What skills are missing for a Senior Data Engineer role?"
 - "Compare this resume against this job description: …"
 - "Suggest stronger bullet points for the most recent role."
+
+## Fact Desk
+
+A small web app for the five-pillar equity note. It takes a ticker, a US or India exchange (NYSE, NASDAQ, NYSE American, NYSE Arca, Cboe, NSE, BSE), a horizon, a risk tolerance, and an optional last price. Every figure that needs a market-data feed is marked **data not connected**. The app does not invent prices, volumes, or flows, and it does not call a model.
+
+```bash
+chmod +x scripts/stock-analysis
+./scripts/stock-analysis
+```
+
+Open `http://127.0.0.1:8765`. Pass `--port` to use another port. Tests:
+
+```bash
+python3 -m unittest stock_analysis.test_report stock_analysis.test_server
+```
